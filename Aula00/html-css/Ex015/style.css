@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+        body {
+            background-color: lightcoral;
+            font-family: monospace;
+            font-size: 15px;
+        }
+        h1 {
+            color: rgb(43, 95, 128);
+            font-size: 1.2em;
+        }
+        h2 {
+            color: crimson;
+            font-size: 1.2em;
+        }
+        p {
+            text-align: justify;
+        }

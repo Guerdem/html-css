@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5
+
+    </title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir essse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/img-m.png" type="image/png">
+        <img src="Imagens/img-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/Tsukihime (月姫) Remake Opening Theme.mp3" type="audio/mpeg">
+        <source src="midia/Tsukihime (月姫) Remake Opening Theme.ogg" type="audio/ogg">
+        <source src="midia/Tsukihime (月姫) Remake Opening Theme.wav" type="audio/wav">
+        <p>Infelizamente sey navegador não consegue reproduzir áudio. <a href="midia/Tsukihime (月姫) Remake Opening Theme.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio> <!-- MP3 WAV OGG-->
+</body>
+</html>

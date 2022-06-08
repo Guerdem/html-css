@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body, ul, li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: #ffffff;
+    
+}
+
+.header > a {
+    font-size: 30px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.header {
+    background-color: #FDC0DF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;/*Mudar caso necessário alinhar com outros itens do site*/
+    margin: 0 auto;
+
+}
+
+.content-wrapper > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
