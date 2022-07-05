@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+:root {
+--fonte1: Verdana, Geneva, Tahoma, sans-serif;
+--fonte2: 'Passion One', cursive;
+--fonte3: 'Sriracha', cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: ;
+}
+
+header h1 {
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header p {
+    font-family: var(--fonte1);
+    font-size: 1em;
+    padding-bottom: 50px;
+}
+
+section  {
+    line-height: 2em;
+    font-size: 3.5vw;
+    font-family: var(--fonte3);
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+.back-img {
+    background-image: url('/img/background001.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center right;
+    max-height: 100vh;
+    color: white;
+}
+.back-img p {
+    background-color: rgba(0, 0, 0, 0.514);
+    max-width: fit-content;
+    padding: 10px;
+}
+
+.back-img-2 {
+    background-image: url('/img/background002.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center right;
+    max-height: 100vh;
+    color: white;
+}
+.back-img-2 p {
+    background-color: rgba(0, 0, 0, 0.514);
+    max-width: fit-content;
+    padding: 10px; 
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+}
