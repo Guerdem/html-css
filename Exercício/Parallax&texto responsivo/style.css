@@ -11,6 +11,10 @@
     margin: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
     color: white;
@@ -18,17 +22,26 @@ header {
     margin-bottom: ;
 }
 
-header h1 {
+header > h1 {
     font-family: var(--fonte2);
     font-size: 10vw;
     font-variant: small-caps;
     padding-top: 50px;
 }
 
-header p {
+header > p {
     font-family: var(--fonte1);
     font-size: 1em;
     padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section  {
@@ -40,7 +53,7 @@ section  {
     padding-bottom: 10vh;
 }
 
-section p {
+.normal > p {
     padding-bottom: 2em;
 }
 
@@ -53,10 +66,11 @@ section p {
     max-height: 100vh;
     color: white;
 }
-.back-img p {
+.back-img > p {
     background-color: rgba(0, 0, 0, 0.514);
     max-width: fit-content;
     padding: 10px;
+    margin-left: -10px;
 }
 
 .back-img-2 {
@@ -68,10 +82,11 @@ section p {
     max-height: 100vh;
     color: white;
 }
-.back-img-2 p {
+.back-img-2 > p {
     background-color: rgba(0, 0, 0, 0.514);
     max-width: fit-content;
-    padding: 10px; 
+    padding: 10px;
+    margin-left: -10px; 
 }
 
 footer {
