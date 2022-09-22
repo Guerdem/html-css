@@ -15,7 +15,7 @@
 
     /* paddings do corpo*/
     --nav-padding: 10px 230px;
-    --section-padding: 130px 250px;
+    --section-padding: 100px 250px;
 }
 
 * {
@@ -119,33 +119,114 @@ section img {
     max-width: 100%;
 }
 
-.noticia-diaria img {
+.noticia-diaria  {
     display: grid;
 }
 
+
 .noticia-diaria img {
     
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+.noticia-diaria p {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 10.73%, rgba(0, 0, 0, 0.61) 100%);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    padding-left: 14px;
 }
 
 .noticia-diaria:nth-child(1) {
     grid-row: 1 / 3;
     background-color: aqua;
+    font-size: 64px;
 }
 
 .noticia-diaria:nth-child(2) {
-    
+    font-size: 32px;
     background-color: #D00000;
 }
 
 .noticia-diaria:nth-child(3) {
-    
+    font-size: 32px;
     background-color: #EEC643;
 }
 
+.noticias-semanais h2 {
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
 
+.noticias-semanais-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.noticia-semanal img {
+    max-width: max-content !important;
+    max-height: 100vh;
+}
+
+.noticia-semanal {
+    display: grid;
+}
+
+.desc-noticia {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    padding: 0px 20px;
+    max-width: 330px;
+    height: 219px;
+
+
+}
+
+.desc-noticia p {
+    display: grid;
+    margin-top: 0px;
+}
+
+.noticia-tipo {
+    color: white;
+    width: 100px;
+    height: 30px !important;
+    font-size: 20px;
+    padding: 0px 10px;
+    padding-top: 4px;
+    background-color: #D00000;
+}
+
+.noticia-semanal-titulo {
+    font-size: 22px;
+    
+}
+
+.noticia-semanal-sobre {
+    font-size: 16px;
+    color: #4F4F4F;
+    
+}
+
+.notica-semanal-dataHora {
+    align-self: flex-end;
+    color: rgba(0, 0, 0, 0.69);
+}
 
 .criador {
-    font-size: 22px;
+    font-size: 20px;
+    color: grey;
     text-align: center;
     padding: 20px;
 }
