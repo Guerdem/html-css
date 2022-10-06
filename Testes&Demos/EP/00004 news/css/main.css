@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  z-index: 1000;
+  left: 0 !important;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  padding: 24px 0px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav .logo {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+article {
+  margin: 0 auto;
+}
+article .sec-inicial {
+  border: blueviolet;
+  max-width: 950px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 80px;
+  font-family: "roboto", sans-serif;
+  margin-bottom: 50px;
+}
+article .sec-inicial h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+article .sec-inicial .materia-desc {
+  color: #AFAFAF;
+  margin: 15px 0px 26px;
+  font-size: 24px;
+}
+article .sec-inicial .publi-coment-share-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+article .sec-inicial .publi-coment-share-wrapper p {
+  font-size: 16px;
+}
+article .sec-inicial .publi-coment {
+  display: flex;
+  flex-direction: column;
+}
+article .sec-inicial .publi-coment .publicado-em, article .sec-inicial .publi-coment .atualizado-ha {
+  color: #AFAFAF;
+}
+article .sec-inicial .publi-coment .publicado-em {
+  margin-left: 4px;
+}
+article .sec-inicial .publi-coment .atualizado-ha {
+  margin-left: 5px;
+}
+article .sec-inicial .publi-coment .comentarios-quantidade {
+  margin-top: 15px;
+}
+article .sec-inicial .pulicacao-info-wrapper {
+  display: flex;
+}
+article .sec-inicial .share-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+article .materia-conteudo {
+  font-size: 32px;
+  min-width: 300px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+article .materia-conteudo p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140.69%;
+  padding: 40px 0px;
+  text-indent: 10px;
+}
+
+.img-materia {
+  background-image: url("/img/blue-journal.webp");
+  background-size: cover;
+  background-position: center center;
+  background-color: grey;
+  width: 1052px;
+  height: 407px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.img2-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.img2-wrapper .img2-materia {
+  background-image: url("/img/journal.webp");
+  background-size: cover;
+  background-position: center center;
+  background-color: grey;
+  width: 805px;
+  height: 362px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.img2-wrapper .img2-desc {
+  font-size: 16px;
+  background-color: #AFAFAF;
+  margin: px;
+  padding: 0;
+  text-align: center;
+  border-style: groove;
+  border-color: #8F8F8F;
+  border-top: none;
+  border-width: 1px;
+}
+
+.end-line {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.creator-name {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}/*# sourceMappingURL=main.css.map */
