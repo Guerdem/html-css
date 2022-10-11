@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "FE 5 Cent1";
+  src: local("FE 5 Cent Regular"), local("FE-5-Cent-Regular"), url("FE5Cent-Regular.woff2") format("woff2"), url("FE5Cent-Regular.woff") format("woff"), url("/font/FE5Cent-Regular(similartomyfont).ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 :root {
   /*Paletas de Cores*/
   --black-font-color: hsl(0, 0%, 0%);
   --white-font-color: hsl(0, 0%, 100%);
-  --top-header: hsl(240, 56%, 28%);
+  --selecd-nav-section: hsl(12, 100%, 45%);
+  --top-header: hwb(240 12% 56%);
   --main-headder: hsl(0, 0%, 75%);
   --warning-color: hsl(7, 93%, 47%);
   --tape-color: hsl(52, 87%, 50%);
@@ -10,7 +17,9 @@
   --content-box-color: hsl(297, 47%, 7%); /*Opacity 65%*/
   --stroke-box-color: hsl(339, 10%, 28%);
   /*Fontes*/
-  --main-font: "FE 5 Cent", sans-serif;
+  --main-font: "FE 5 Cent1", sans-serif;
+  /*paddings*/
+  --top-header-padding: 5.3%;
 }
 
 html {
@@ -25,10 +34,13 @@ html {
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
   max-width: 100%;
+  font-family: var(--main-font);
 }
 
 .background {
@@ -39,6 +51,62 @@ body {
   position: absolute;
   width: 100%;
   height: 1141px;
+  filter: blur(0.5px);
   z-index: -1;
-  overflow: hidden;
+  filter: brightness(80%);
+}
+
+.top-header-wrapper {
+  background-color: var(--top-header);
+}
+.top-header-wrapper div {
+  display: flex;
+}
+.top-header-wrapper .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.top-header-wrapper .top-header .SMT-header-logo-wrapper {
+  padding-left: var(--top-header-padding);
+  min-width: 72px;
+}
+.top-header-wrapper .top-header .SMT-header-logo-wrapper span {
+  width: 38.406px;
+}
+.top-header-wrapper .top-header .help-header-wrapper {
+  display: flex;
+  align-items: center;
+  padding-right: var(--top-header-padding);
+}
+.top-header-wrapper .top-header .help-header-wrapper .help-header-link, .top-header-wrapper .top-header .help-header-wrapper .help-header-icon > path {
+  color: var(--white-font-color);
+  fill: var(--white-font-color);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: var(--main-headder);
+  height: 64px;
+}
+.nav-wrapper .nav-section-seleced {
+  color: var(--selecd-nav-section);
+  text-decoration: underline;
+}
+.nav-wrapper .nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1240px;
+}
+.nav-wrapper div {
+  display: flex;
+  font-size: 1rem;
+}
+.nav-wrapper div a {
+  padding: 0px 14px;
+  color: --;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'FE 5 Cent';
+    src: local('FE 5 Cent Regular'), local('FE-5-Cent-Regular'),
+        url('FE5Cent-Regular.woff2') format('woff2'),
+        url('FE5Cent-Regular.woff') format('woff'),
+        url('FE5Cent-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
