@@ -88,9 +88,10 @@ body {
 .nav-wrapper {
   display: flex;
   align-items: center;
-  align-content: center;
+  align-content: flex-end;
   background-color: var(--main-headder);
   height: 64px;
+  overflow: hidden;
 }
 .nav-wrapper .nav-section-seleced {
   color: var(--selecd-nav-section);
@@ -101,12 +102,53 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   width: 1240px;
+  align-items: center;
+  align-content: center;
+}
+.nav-wrapper .nav .nav-buy-newsletter-wrapper .nav-buy-wrapper {
+  background-color: var(--warning-color);
+  height: 50px;
+}
+.nav-wrapper .nav .nav-buy-newsletter-wrapper .nav-buy-wrapper .nav-buy {
+  color: var(--white-font-color);
+  min-width: 140px;
+}
+.nav-wrapper .nav .nav-buy-newsletter-wrapper .nav-buy:hover {
+  color: var(--white-font-color);
+}
+.nav-wrapper .nav .nav-buy-newsletter-wrapper .nav-newsletter {
+  padding: 0 0 0 14px;
 }
 .nav-wrapper div {
   display: flex;
-  font-size: 1rem;
+  font-size: 1em;
+  align-items: center;
+  align-content: center;
 }
 .nav-wrapper div a {
   padding: 0px 14px;
-  color: --;
+  color: var(--black-font-color);
+}
+.nav-wrapper div a:hover {
+  color: var(--selecd-nav-section);
+}
+
+.main {
+  position: relative;
+}
+.main .main-logo-game-wrapper {
+  text-align: center;
+  max-width: 100%;
+}
+.main .main-logo-game-wrapper img {
+  width: 698px;
+  max-width: 100%;
+  height: auto;
+}
+.main .tape-wrapper {
+  display: flex;
+}
+.main img {
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
