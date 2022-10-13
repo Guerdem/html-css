@@ -12,7 +12,6 @@
   --top-header: hwb(240 12% 56%);
   --main-headder: hsl(0, 0%, 75%);
   --warning-color: hsl(7, 93%, 47%);
-  --tape-color: hsl(52, 87%, 50%);
   --selected-textbox-color: hsl(62, 87%, 49%);
   --content-box-color: hsl(297, 47%, 7%); /*Opacity 65%*/
   --stroke-box-color: hsl(339, 10%, 28%);
@@ -44,16 +43,17 @@ body {
 }
 
 .background {
-  background-image: url("/img/raw-background.jpg");
+  background-image: url("/img/Group 7.png");
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   position: absolute;
+  top: 44px;
   width: 100%;
-  height: 1141px;
-  filter: blur(0.5px);
-  z-index: -1;
-  filter: brightness(80%);
+  height: 100%;
+  height: 1320px;
+  z-index: -999;
+  filter: brightness(100%);
 }
 
 .top-header-wrapper {
@@ -67,6 +67,7 @@ body {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  height: 45px;
 }
 .top-header-wrapper .top-header .SMT-header-logo-wrapper {
   padding-left: var(--top-header-padding);
@@ -90,7 +91,10 @@ body {
   align-items: center;
   align-content: flex-end;
   background-color: var(--main-headder);
-  height: 64px;
+  height: 65px;
+  border: 1px solid;
+  border-color: var(--stroke-box-color);
+  opacity: 90%;
   overflow: hidden;
 }
 .nav-wrapper .nav-section-seleced {
@@ -101,7 +105,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 1240px;
+  width: 1372px;
   align-items: center;
   align-content: center;
 }
@@ -117,11 +121,11 @@ body {
   color: var(--white-font-color);
 }
 .nav-wrapper .nav .nav-buy-newsletter-wrapper .nav-newsletter {
-  padding: 0 0 0 14px;
+  padding: 0 0 0 22px;
 }
 .nav-wrapper div {
   display: flex;
-  font-size: 1em;
+  font-size: 20px;
   align-items: center;
   align-content: center;
 }
@@ -139,16 +143,87 @@ body {
 .main .main-logo-game-wrapper {
   text-align: center;
   max-width: 100%;
+  padding-top: 80px;
+  padding-bottom: 200px;
 }
 .main .main-logo-game-wrapper img {
-  width: 698px;
+  width: 800px;
   max-width: 100%;
   height: auto;
 }
-.main .tape-wrapper {
+.main .box-content-wrapper {
+  margin: 0 auto;
+  width: 1660px;
+  max-width: 100%;
+}
+.main .box-content-wrapper .box-select {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  background-color: var(--content-box-color);
+  -webkit-backdrop-filter: opacity(20%);
+          backdrop-filter: opacity(20%);
+  color: var(--white-font-color);
+  max-width: 620px;
+  height: 90px;
+  border: 1px solid;
+  border-color: var(--stroke-box-color);
+  letter-spacing: 1px;
+  box-sizing: content-box;
+  position: relative;
+  bottom: -50px;
+  z-index: 900;
+}
+.main .box-content-wrapper .box-select p {
+  font-size: 1.2em;
+  padding: 1rem 0px;
+}
+.main .box-content-wrapper .box-select .screenshoots-section-select {
+  padding: 0px 60px;
+  position: relative;
+  color: var(--selected-textbox-color);
+}
+.main .box-content-wrapper .box-select .screenshoots-section-select::before {
+  content: url(/img/Vector\ 1.svg);
+  position: absolute;
+  left: 1.7em;
+  top: 0.1em;
+  fill: var(--selected-textbox-color);
+}
+.main .box-content-wrapper .box-select .trailers-section-select {
+  padding-right: 40px;
+}
+.main .box-content-wrapper .screenshots-trailers {
+  background-color: var(--content-box-color);
+  border: 1px solid;
+  border-color: var(--stroke-box-color);
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+.main .box-content-wrapper .gallery {
+  width: 100%;
+  z-index: 30;
+}
+.main .box-content-wrapper .gallery .img-gallery-wrapper {
+  max-width: 100%;
+  display: flex;
+  padding: 0px 80px;
+  overflow-x: auto;
+  position: relative;
+  z-index: 20;
+}
+.main .box-content-wrapper .gallery img {
+  z-index: 10;
+  padding: 50px 0px;
+  padding-right: 30px;
+  width: 460px;
+  height: auto;
+  box-sizing: content-box;
 }
 .main img {
-  max-width: 100%;
-  height: auto;
+  /*max-width: 100%;
+  height: auto;*/
 }/*# sourceMappingURL=main.css.map */

@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1 {
-            font-family: 'MinecraftCHMC';
-            width: 100px;
-            max-height: 1px;
-            background-color: aqua;
-            font-size: 10em;
+
+        div.box-2 {
+            max-width: 400px;
+            width: 50%;
+            border-radius: 50%;
+            background-color: rgb(217, 83, 177);
+        }
+
+        .box-2::after {
+            content: '';
+            display: block;
+            padding-bottom: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Ola de bossssssssssssa</h1>
+    <div class="box-1">
+        <div class="box-2">
+
+        </div>
+    </div>
 </body>
 </html>
