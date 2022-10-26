@@ -1,0 +1,241 @@
+@charset 'UTF-8';
+
+:root {
+    /*Cores*/
+    --main-background-color: white;
+    --pure-white: white;
+    --pure-black: black;
+    --register-color: hsl(349, 100%, 47%);
+    --grey-color-for: hsl(0, 0%, 86%);
+    --grey-paragraph: hsl(0, 0%, 91%);
+    --grey-social-box: hsl(0, 0%, 91%);
+    --grey-footer-box: hsl(0, 0%, 40%);
+    --background-box-color: hsl(333, 90%, 43%);
+    --main-article-title-color: white;
+    --paragraph-bold: black;
+    --paragraph-links: hsl(0, 85%, 52%);
+    --paragraph-color: hsl(0, 0%, 9%);
+
+    /*Widths & Heights*/
+    --nav-width: 1860px;
+    --nav-height: 70px;
+
+    --box-content-title: 1014px;
+    --article-width: 1200px;
+
+    /*Paddings*/
+    --register-box-nav-padding: 6px;
+    --article-padding: 90px;
+
+    /*Font Family*/
+    
+    --logo-font: 'High Tower Text', sans-serif;
+    --nav-font: 'Public Sans', sans-serif;
+    --article-font: 'Roboto', sans-serif;
+
+    /*Font Size*/
+
+    --logo-nav-font-size: 36px;
+    --nav-font-size: 22px;
+    --article-h1-size: 3em;
+    --article-h2-size: 2em;
+    --artcile-chamada-desc-size: 1em;
+    --info-about-article: 0.8em;
+
+  }
+  
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+  background-color: var(--pure-white);
+  max-height: var(--nav-height);
+  white-space: nowrap;
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: var(--nav-width);
+    padding: 14px 0px;
+
+    .logo {
+      font-family: var(--logo-font);
+      font-size: 36px;
+      color: var(--pure-black);
+      flex-wrap: nowrap;
+    }
+    .list-wrapper {
+      font-family: var(--nav-font);
+      font-size: 23px;
+      display: flex;
+      
+
+      .register {
+        margin-left: 88px;
+        padding: var(--register-box-nav-padding);
+        background-color: var(--register-color);
+        color: var(--pure-white);
+      }
+      a {
+        padding: 0px 14px;
+        color: var(--pure-black);
+      }
+    }
+  }
+}
+
+.background-image {
+  position: absolute;
+  z-index: -1;
+  background: url('/img/flowers.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 70%;
+  box-shadow: inset 0px -173px 84px rgb(0 0 0 / 50%);
+  width: 100%;
+  height: 520px;
+}
+
+ article {
+  font-family: var(--article-font);
+  max-width: var(--article-width);
+  margin: 0 auto;
+
+  .box-wrapper {
+    background-color: var(--background-box-color);
+    color: var(--pure-white);
+    width: 100%;
+    margin-top: 300px;
+    margin-bottom: 114px;
+    padding: 70px 90px;
+    padding-left: var(--article-padding);
+
+    .box-content-wrapper {
+      
+    }
+
+    h1 {
+      font-size: var(--article-h1-size);
+      font-style: bold;
+    }
+
+    .article-desc {
+      font-size: var(--artcile-chamada-desc-size);
+      padding: 10px 0px;
+      color: var(--grey-paragraph);
+      padding-bottom: 40px;
+
+    }
+
+    .info-box-wrapper {
+      font-size: var(--info-about-article);
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+
+      .feito-por {
+        color: var(--grey-color-for);
+      }
+    }
+  }
+
+  .main-content-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .social-wrapper {
+      position: absolute;
+      background-color: var(--grey-social-box);
+      max-width: 46px;
+      max-height: 184px;
+      clip-path: polygon(0 8%, 30% 0, 100% 0, 100% 94%, 76% 100%, 0 100%);
+
+      
+      .social-icon {
+        text-align: center;
+        padding: 8px;
+        
+
+      }
+    }
+
+    .main-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      
+      .main-article-wrapper {
+        width: 1000px;
+        padding-left: var(--article-padding);
+        padding-right: 20px;
+        
+        h2 {
+          font-size: var(--article-h2-size);
+          margin: 60px 0px 40px 0px;
+        }
+        p {
+          font-size: 2em;
+          margin-bottom: 60px;
+        }
+
+        .img-article-1 {
+          margin: 0 auto;
+          text-align: center;
+
+            .img {
+            background-image: url('/img/anime-like.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 440px;
+            }
+
+            p {
+              margin-top: 4px;
+              
+              font-size: 1em;
+              color: var(--grey-footer-box);
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+footer {
+  background-color:#D9D9D9;
+  color: var(--grey-footer-box);
+  text-align: center;
+  margin-top: 100px;
+  
+  p {
+    padding: 20px 0px;
+    font-family: var(--article-font);
+  }
+}
