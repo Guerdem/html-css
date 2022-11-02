@@ -99,7 +99,7 @@ header .nav-wrapper .open-menu-icon {
 .background-image {
   position: absolute;
   z-index: -1;
-  background: url("/img/flowers.jpeg");
+  background: url("https://guerdem.github.io/html-css/Testes%26Demos/EP/News%20(Demo%203)/img/flowers.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,7 +195,7 @@ article .main-content-wrapper .main-content .main-article-wrapper .img-article-1
   text-align: center;
 }
 article .main-content-wrapper .main-content .main-article-wrapper .img-article-1 .img {
-  background-image: url("/img/anime-like.gif");
+  background-image: url("https://guerdem.github.io/html-css/Testes%26Demos/EP/News%20(Demo%203)/img/anime-like.gif");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -302,7 +302,6 @@ footer p {
     margin-bottom: 50px;
   }
   article .main-content-wrapper .main-content .main-article-wrapper .img-article-1 .img {
-    background-image: url("/img/anime-like.gif");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -391,7 +390,6 @@ footer p {
     margin-bottom: 50px;
   }
   article .main-content-wrapper .main-content .main-article-wrapper .img-article-1 .img {
-    background-image: url("/img/anime-like.gif");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -535,7 +533,7 @@ footer p {
     margin-bottom: 50px;
   }
   article .main-content-wrapper .main-content .main-article-wrapper .img-article-1 .img {
-    background-image: url("/img/anime-like.gif");
+    background-image: url(".../img/anime-like.gif");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -548,7 +546,6 @@ footer p {
 }
 @media only screen and (max-width: 500px) {
   article .main-content-wrapper .main-content .main-article-wrapper .img-article-1 .img {
-    background-image: url(/img/anime-like.gif);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
