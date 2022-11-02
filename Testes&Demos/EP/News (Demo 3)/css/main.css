@@ -98,7 +98,7 @@ header .nav-wrapper .open-menu-icon {
 .background-image {
   position: absolute;
   z-index: -1;
-  background: url("img/flowers.jpeg");
+  background: url(img/flowers.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
