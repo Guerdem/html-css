@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://guerdem.github.io/html-css/Testes%26Demos/EP/News%20(Demo%203)/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Newsways</title>
 </head>
 <body>
-    <header>
+    <header>       
         <nav class="nav-wrapper">
             <a class="logo" href="">NewsWays</a>
-            <ul class="list-wrapper">
+            <ul id="nav">
+                <div class="close-menu-icon"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.4375 21.125L21.5625 1M21.5625 21.125L1.4375 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </div>
+                <li class="home-mobile"><a href="#">Home</a></li>
                 <li><a href="#">Redações</a></li>
                 <li><a href="#">Lançamentos</a></li>
                 <li><a href="#">Artigos</a></li>
@@ -19,11 +24,11 @@
                 <li><a href="#" class="register">Registre-se</a></li>
                 <li><a href="#">Log-in</a></li>
             </ul>
-                <div class="open-menu-icon">
+                <div class="open-menu-icon" id="btn-mobile">
                     <svg width="29" height="15" viewBox="0 0 29 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1H28M1 7.5H28M1 14H28" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    </div>
+                </div>
         </nav>
     </header>
     <div class="background-image"></div>
@@ -128,5 +133,22 @@
     <footer>
         <p>©Guerdem</p>
     </footer>
+
+
+
+    <script>
+        const menu = document.querySelector('.open-menu-icon')
+        const close = document.querySelector('.close-menu-icon')
+        const nav = document.querySelector('ul')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+
+    </script>
 </body>
 </html>
