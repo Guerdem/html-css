@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 960px;
+  background: radial-gradient(217.91% 238.28% at 50% 50%, rgba(0, 0, 19, 0.13) 0%, rgb(48, 0, 255) 99.99%, #181B33 100%);
+  background-color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .top-nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: hsla(273deg, 100%, 22%, 0.497);
+}
+header .top-nav-logo a {
+  display: flex;
+  color: white;
+  /*text-shadow: 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077;*/
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "Neonderthaw", cursive;
+  font-size: 50px;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+          animation: neon1 1.5s ease-in-out infinite alternate;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: hsla(259deg, 100%, 20%, 0.505);
+  font-family: "Neonderthaw", cursive;
+  font-size: 30px;
+  box-shadow: 0px 35px 50px -18px #A128FF;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul a {
+  display: block;
+  color: white;
+  padding: 6px 30px;
+}
+header nav ul .atual-home {
+  text-shadow: 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077;
+}
+header nav ul a:hover {
+  text-shadow: 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077;
+  transition: 0.4s;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077;
+  }
+  to {
+    text-shadow: 0 0 5px #F90077, 0 0 10px #F90077, 0 0 15px #fff, 0 0 20px #ff1177, 0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0px 0px 6px #F90077, 0px 0px 6px #F90077, 0px 0px 6px #F90077;
+  }
+  to {
+    text-shadow: 0 0 5px #F90077, 0 0 10px #F90077, 0 0 15px #fff, 0 0 20px #ff1177, 0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+  }
+}/*# sourceMappingURL=main.css.map */
