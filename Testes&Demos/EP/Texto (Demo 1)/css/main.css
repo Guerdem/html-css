@@ -401,12 +401,11 @@ main article .warning-wrapper .warnings .warning-title svg {
 }
 main article .warning-wrapper .warnings .warning-texts {
   display: flex;
-  position: relative;
   font-style: italic;
   line-height: 170%;
   padding-bottom: 20px;
 }
-main article .warning-wrapper .warnings .warning-texts .Q2:hover, main article .warning-wrapper .warnings .warning-texts ul + .question-2-desc {
+main article .warning-wrapper .warnings .warning-texts .Q1:hover + .question-1-desc {
   display: block;
   color: red;
 }
@@ -416,6 +415,7 @@ main article .warning-wrapper .warnings .warning-texts ul {
 main article .warning-wrapper .warnings .warning-texts ul li {
   font-size: var(--font-size-20);
   margin-bottom: 8px;
+  color: var(--blackScale-60);
 }
 main article .warning-wrapper .warnings .warning-texts hr {
   width: 2px;
@@ -424,7 +424,6 @@ main article .warning-wrapper .warnings .warning-texts hr {
 }
 main article .warning-wrapper .warnings .warning-texts .question-1-desc {
   display: block;
-  position: absolute;
   width: 425px;
   font-size: var(--font-size-20);
   padding-left: 20px;

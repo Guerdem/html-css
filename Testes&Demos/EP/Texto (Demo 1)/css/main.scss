@@ -510,12 +510,11 @@ main {
 
         .warning-texts {
           display: flex;
-          position: relative;
           font-style: italic;
           line-height: 170%;
           padding-bottom: 20px;
 
-        .Q2:hover, ul + .question-2-desc   {
+          .Q1:hover + .question-1-desc   {
               display: block;
               color: red;
             }
@@ -527,6 +526,7 @@ main {
             li {
               font-size: var(--font-size-20);
               margin-bottom: 8px;
+              color: var(--blackScale-60);
             }
                         
           }
@@ -540,7 +540,6 @@ main {
 
           .question-1-desc {
             display: block;
-            position: absolute;
             width: 425px;
             font-size: var(--font-size-20);
             padding-left: 20px;

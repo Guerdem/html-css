@@ -1,7 +1,8 @@
-var questionsSvg = document.querySelectorAll('.open-info-svg')
 
 
 /*Web Open Questions Options*/
+var questionsSvg = document.querySelectorAll('.open-info-svg')
+
 const questions = questionsSvg[0]
 const questions1 = questionsSvg[1]
 
@@ -24,15 +25,9 @@ questions1.addEventListener('click', () =>{
 })
 /*Close Extra Questions*/
 
-
 closeQ.addEventListener('click', () =>{
     questionsSection.removeAttribute('id')
 })
 
 
 
-
-
-
-
-console.log(closeQ)
