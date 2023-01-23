@@ -513,11 +513,8 @@ main {
           font-style: italic;
           line-height: 170%;
           padding-bottom: 20px;
-
-          .Q1:hover + .question-1-desc   {
-              display: block;
-              color: red;
-            }
+          
+     
 
 
           ul {
@@ -538,16 +535,24 @@ main {
             
           }
 
-          .question-1-desc {
-            display: block;
+          div > p {
+            display: none;
             width: 425px;
+            height: 210px;
             font-size: var(--font-size-20);
             padding-left: 20px;
+            
           }
 
-          .question-2-desc {
-            display: none;
+          #doubt-desc-active > p{
+            display: block;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
           }
+
+
         }
 
         .open-info-svg {

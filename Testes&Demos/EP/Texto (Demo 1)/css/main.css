@@ -405,10 +405,6 @@ main article .warning-wrapper .warnings .warning-texts {
   line-height: 170%;
   padding-bottom: 20px;
 }
-main article .warning-wrapper .warnings .warning-texts .Q1:hover + .question-1-desc {
-  display: block;
-  color: red;
-}
 main article .warning-wrapper .warnings .warning-texts ul {
   width: 425px;
 }
@@ -422,14 +418,19 @@ main article .warning-wrapper .warnings .warning-texts hr {
   height: 140px;
   margin: auto;
 }
-main article .warning-wrapper .warnings .warning-texts .question-1-desc {
-  display: block;
+main article .warning-wrapper .warnings .warning-texts div > p {
+  display: none;
   width: 425px;
+  height: 210px;
   font-size: var(--font-size-20);
   padding-left: 20px;
 }
-main article .warning-wrapper .warnings .warning-texts .question-2-desc {
-  display: none;
+main article .warning-wrapper .warnings .warning-texts #doubt-desc-active > p {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
 }
 main article .warning-wrapper .warnings .open-info-svg {
   position: absolute;

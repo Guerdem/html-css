@@ -29,5 +29,132 @@ closeQ.addEventListener('click', () =>{
     questionsSection.removeAttribute('id')
 })
 
+/*Questions*/
+var doubt1 = document.querySelector('.q1')
+var doubt2 = document.querySelector('.q2')
+var doubt3 = document.querySelector('.q3')
+var doubt4 = document.querySelector('.q4')
+var doubt5 = document.querySelector('.q5')
 
+/*Questions descriptions*/
+var doubtDesc1= document.querySelector('.question-1-desc')
+var doubtDesc2 = document.querySelector('.question-2-desc')
+var doubtDesc3 = document.querySelector('.question-3-desc')
+var doubtDesc4 = document.querySelector('.question-4-desc')
+var doubtDesc5 = document.querySelector('.question-5-desc')
+
+
+/*Change questions and questions descriptions*/
+
+doubt1.addEventListener("mouseover", function() {
+    this.style.color = "black";
+    this.style.textDecoration = "underline";
+    doubtDesc1.setAttribute('id','doubt-desc-active')
+
+    doubt2.style.color = "grey";
+    doubt2.style.textDecoration = "none";  
+    doubtDesc2.removeAttribute('id')   
+
+    doubt3.style.color = "grey";
+    doubt3.style.textDecoration = "none";  
+    doubtDesc3.removeAttribute('id')
+
+    doubt4.style.color = "grey";
+    doubt4.style.textDecoration = "none";  
+    doubtDesc4.removeAttribute('id')
+
+    doubt5.style.color = "grey";
+    doubt5.style.textDecoration = "none";  
+    doubtDesc5.removeAttribute('id')
+}) 
+
+doubt2.addEventListener("mouseover", function() {
+    this.style.color = "black";
+    this.style.textDecoration = "underline";
+    doubtDesc2.setAttribute('id','doubt-desc-active')
+    
+    doubt1.style.color = "grey";
+    doubt1.style.textDecoration = "none";  
+    doubtDesc1.removeAttribute('id')  
+
+    doubt3.style.color = "grey";
+    doubt3.style.textDecoration = "none";  
+    doubtDesc3.removeAttribute('id')
+
+    doubt4.style.color = "grey";
+    doubt4.style.textDecoration = "none";  
+    doubtDesc4.removeAttribute('id')
+
+    doubt5.style.color = "grey";
+    doubt5.style.textDecoration = "none";  
+    doubtDesc5.removeAttribute('id')
+})
+
+
+doubt3.addEventListener("mouseover", function() {
+    this.style.color = "black";
+    this.style.textDecoration = "underline";
+    doubtDesc3.setAttribute('id','doubt-desc-active')
+
+    doubt1.style.color = "grey";
+    doubt1.style.textDecoration = "none";  
+    doubtDesc1.removeAttribute('id')
+    
+    doubt2.style.color = "grey";
+    doubt2.style.textDecoration = "none";  
+    doubtDesc2.removeAttribute('id')
+
+    doubt4.style.color = "grey";
+    doubt4.style.textDecoration = "none";  
+    doubtDesc4.removeAttribute('id')
+
+    doubt5.style.color = "grey";
+    doubt5.style.textDecoration = "none";  
+    doubtDesc5.removeAttribute('id')
+})
+
+
+doubt4.addEventListener("mouseover", function() {
+    this.style.color = "black";
+    this.style.textDecoration = "underline";
+    doubtDesc4.setAttribute('id','doubt-desc-active')
+
+    doubt1.style.color = "grey";
+    doubt1.style.textDecoration = "none"; 
+    doubtDesc1.removeAttribute('id')
+    
+    doubt2.style.color = "grey";
+    doubt2.style.textDecoration = "none";  
+    doubtDesc2.removeAttribute('id')  
+
+    doubt3.style.color = "grey";
+    doubt3.style.textDecoration = "none";  
+    doubtDesc3.removeAttribute('id')
+
+    doubt5.style.color = "grey";
+    doubt5.style.textDecoration = "none";  
+    doubtDesc5.removeAttribute('id')
+})      
+
+doubt5.addEventListener("mouseover", function() {
+    this.style.color = "black";
+    this.style.textDecoration = "underline";
+    doubtDesc5.setAttribute('id','doubt-desc-active')
+
+    doubt1.style.color = "grey";
+    doubt1.style.textDecoration = "none";  
+    doubtDesc1.removeAttribute('id')
+    
+    doubt2.style.color = "grey";
+    doubt2.style.textDecoration = "none";  
+    doubtDesc2.removeAttribute('id')   
+
+    doubt3.style.color = "grey";
+    doubt3.style.textDecoration = "none";  
+    doubtDesc3.removeAttribute('id')
+
+    doubt4.style.color = "grey";
+    doubt4.style.textDecoration = "none";  
+    doubtDesc4.removeAttribute('id')
+})
 
