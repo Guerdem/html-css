@@ -412,6 +412,7 @@ main article .warning-wrapper .warnings .warning-texts ul li {
   font-size: var(--font-size-20);
   margin-bottom: 8px;
   color: var(--blackScale-60);
+  cursor: default;
 }
 main article .warning-wrapper .warnings .warning-texts hr {
   width: 2px;
@@ -424,6 +425,10 @@ main article .warning-wrapper .warnings .warning-texts div > p {
   height: 210px;
   font-size: var(--font-size-20);
   padding-left: 20px;
+}
+main article .warning-wrapper .warnings .warning-texts .q1 {
+  color: black;
+  text-decoration: underline;
 }
 main article .warning-wrapper .warnings .warning-texts #doubt-desc-active > p {
   display: block;

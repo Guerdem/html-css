@@ -524,6 +524,7 @@ main {
               font-size: var(--font-size-20);
               margin-bottom: 8px;
               color: var(--blackScale-60);
+              cursor: default;
             }
                         
           }
@@ -541,7 +542,11 @@ main {
             height: 210px;
             font-size: var(--font-size-20);
             padding-left: 20px;
-            
+          }
+
+          .q1 {
+            color: black;
+            text-decoration: underline;
           }
 
           #doubt-desc-active > p{
