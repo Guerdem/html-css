@@ -158,3 +158,61 @@ doubt5.addEventListener("mouseover", function() {
     doubtDesc4.removeAttribute('id')
 })
 
+function selectElementByClass(className) {
+    return document.querySelector(`.${className}`);
+  }
+
+const sections = [
+    selectElementByClass('topoWrapper'),
+    selectElementByClass('section-1'),
+    selectElementByClass('section-2'),
+    selectElementByClass('section-3'),
+    selectElementByClass('section-4'),
+    selectElementByClass('section-5'),
+];
+
+const navSections = {
+    topo: selectElementByClass('topoTitulo'),
+    Sec1: selectElementByClass('sectionNav-1'),
+    Sec2: selectElementByClass('sectionNav-2'),
+    Sec3: selectElementByClass('sectionNav-3'),
+    Sec4: selectElementByClass('sectionNav-4'),
+    Sec5: selectElementByClass('sectionNav-5'), 
+}
+
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.7,
+  };
+
+  function observerCallback(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // get the nav item corresponding to the id of the section
+        // that is currently in view
+        const navSection = navSections[entry.target.id];
+        // add 'active' class on the navItem
+        navSection.classList.add('active');
+        // remove 'active' class from any navItem that is not
+        // same as 'navItem' defined above
+        Object.values(navSections).forEach((item) => {
+          if (item != navSection) {
+            item.classList.remove('active');
+          }
+        });
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  sections.forEach((sec) => observer.observe(sec));
+
+
+console.log(navSections)
+
+
+
+
+

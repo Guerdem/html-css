@@ -190,40 +190,49 @@
                     </svg>
             </div>
     </header>
-    <aside>
+    <aside class="light-theme">
         <div class="aside-wrapper">
-            <a href="#top">
-                <h1>Título / Topo</h1>
-            </a>
-            <hr>
+            <div class="navTopo-wrapper">
+                <a href="#topo">
+                    <h1 class="topoTitulo">Título / Topo</h1>
+                </a>
+            </div>
             <ul>
-                <a href="">
-                    <li class="up-select" id="up-selected">Seção 1</li>
+                <a href="#Sec1" class="up-select sectionNav-1 active">
+                    <li>Seção 1</li>
                 </a>
                 <ul>
-                    <li class="sub-select">Pau no cu do capitalismo</li>
-                    <li class="sub-select">Demo</li>
+                    <li class="sub-select "><span class="underline">Pau no cu do capitalismo</span></li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
                 </ul>
-                <li class="up-select">Seção 2</li>
+                <a href="#Sec2" class="up-select sectionNav-2 ">
+                    <li>Seção 2</li>
+                </a>
                 <ul>
-                    <li class="sub-select">Demo</li>
-                    <li class="sub-select">Demo</li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
                 </ul>
-                <li class="up-select">Seção 3</li>
+                <a href="#Sec3" class="up-select sectionNav-3 ">
+                    <li>Seção 3</li>
+                </a>
                 <ul>
-                    <li class="sub-select">Demo</li>
-                    <li class="sub-select">Demo</li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
                 </ul>
-                <li class="up-select">Seção 4</li>
+                <a href="#Sec4" class="up-select sectionNav-4 ">
+                    <li>Seção 4</li>
+                </a>
                 <ul>
-                    <li class="sub-select">Demo</li>
-                    <li class="sub-select">Demo</li>
-                    <li class="sub-select">Demo</li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
                 </ul>
-                <li class="up-select">Seção 5</li>
+                <a href="#Sec5" class="up-select sectionNav-5 ">
+                    <li>Seção 5</li>
+                </a>
                 <ul>
-                    <li class="sub-select">Demo</li>
-                    <li class="sub-select">Demo</li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
+                    <li class="sub-select "><span class="underline">Demo</span></li>
                 </ul>
             </ul>
         </div>
@@ -231,88 +240,91 @@
     
     <main>
         <article>
-            <div id="top" class="header-article">
-                <span class="top-left-border"><svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="86.0002" y1="0.5" x2="0.000244097" y2="0.499992" stroke="black"/>
-                    <line x1="0.500244" y1="2.18557e-08" x2="0.50024" y2="86" stroke="black"/>
-                    </svg>
-                    </span>
-                <span class="bottom-right-border"><svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0.000305176" y1="85.5" x2="86.0003" y2="85.5" stroke="black"/>
-                    <line x1="85.5003" y1="86" x2="85.5003" y2="7.65125e-06" stroke="black"/>
-                    </svg>
-                    </span>
-                <div class="data-time-wrapper">
-                    <div class="data">12/Dez/2022</div>
-                    <div class="read-time">10 Min de Leitura</div>
+            <div id="topo" class="topoWrapper">
+                <div class="header-article">
+                    <span class="top-left-border"><svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="86.0002" y1="0.5" x2="0.000244097" y2="0.499992" stroke="black"/>
+                        <line x1="0.500244" y1="2.18557e-08" x2="0.50024" y2="86" stroke="black"/>
+                        </svg>
+                        </span>
+                    <span class="bottom-right-border"><svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.000305176" y1="85.5" x2="86.0003" y2="85.5" stroke="black"/>
+                        <line x1="85.5003" y1="86" x2="85.5003" y2="7.65125e-06" stroke="black"/>
+                        </svg>
+                        </span>
+                    <div class="data-time-wrapper">
+                        <div class="data">12/Dez/2022</div>
+                        <div class="read-time">10 Min de Leitura</div>
+                    </div>
+                    <div class="article-header-text-content">
+                        <h1>Videogames são complicados de escolher</h1>
+                        <p>Mas não precisa ser assim, então cá estou para esclarecer os por menores disso</p>
+                    </div>
+                    <div class="profile-img-article-wrapper">
+                        <div class="profile-img-article"></div>
+                        <p>Por @Guerdem</p>
+                    </div>
                 </div>
-                <div class="article-header-text-content">
-                    <h1>Videogames são complicados de escolher</h1>
-                    <p>Mas não precisa ser assim, então cá estou para esclarecer os por menores disso</p>
-                </div>
-                <div class="profile-img-article-wrapper">
-                    <div class="profile-img-article"></div>
-                    <p>Por @Guerdem</p>
-                </div>
-            </div>
-            <div class="header-img-article"></div>
-            <span class="open-info-svg" >
-                <div>
-                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="44" height="44" fill="black" fill-opacity="0.2"/>
-                    <path d="M42.1875 2.8125H2.8125V42.1875H42.1875V2.8125ZM39.375 39.375H5.625V5.625H39.375V39.375Z" fill="white"/>
-                    <path d="M20.925 27C20.925 25.4812 21.0611 24.3889 21.3334 23.7229C21.6049 23.0576 22.1812 22.3312 23.0625 21.5437C23.8312 20.8687 24.417 20.2826 24.8197 19.7854C25.2232 19.2889 25.425 18.7219 25.425 18.0844C25.425 17.3156 25.1674 16.6781 24.6521 16.1719C24.1361 15.6656 23.4187 15.4125 22.5 15.4125C21.5437 15.4125 20.817 15.7031 20.3197 16.2844C19.8232 16.8656 19.4719 17.4563 19.2656 18.0563L16.3687 16.8187C16.7625 15.6187 17.4844 14.5781 18.5344 13.6969C19.5844 12.8156 20.9062 12.375 22.5 12.375C24.4687 12.375 25.983 12.9236 27.0427 14.0209C28.1017 15.1174 28.6312 16.4344 28.6312 17.9719C28.6312 18.9094 28.4299 19.7111 28.0271 20.3771C27.6236 21.0424 26.9906 21.7969 26.1281 22.6406C25.2094 23.5219 24.6517 24.192 24.4552 24.651C24.258 25.1107 24.1594 25.8938 24.1594 27H20.925ZM22.5 33.75C21.8812 33.75 21.3517 33.5299 20.9115 33.0896C20.4705 32.6486 20.25 32.1187 20.25 31.5C20.25 30.8813 20.4705 30.3514 20.9115 29.9104C21.3517 29.4701 21.8812 29.25 22.5 29.25C23.1187 29.25 23.6486 29.4701 24.0896 29.9104C24.5299 30.3514 24.75 30.8813 24.75 31.5C24.75 32.1187 24.5299 32.6486 24.0896 33.0896C23.6486 33.5299 23.1187 33.75 22.5 33.75Z" fill="white"/>
-                    <rect x="0.5" y="0.5" width="44" height="44" stroke="#DADADA"/>
-                    </svg>
-                </div>
-            </span>
-            <div class="warning-wrapper">
-                <div class="warnings"> 
-                    <div class="warning-title">
-                        <p>Possíeis dúvidas</p>
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.500305" y="0.5" width="48.2402" height="49" fill="#FF6666"/>
-                        <path d="M46.163 3.125H3.07782V46.875H46.163V3.125ZM43.0855 43.75H6.15533V6.25H43.0855V43.75Z" fill="white"/>
-                        <path d="M22.897 30C22.897 28.3125 23.046 27.0988 23.3439 26.3587C23.6409 25.6196 24.2716 24.8125 25.2359 23.9375C26.0771 23.1875 26.7181 22.5363 27.1587 21.9837C27.6003 21.4321 27.821 20.8021 27.821 20.0938C27.821 19.2396 27.5391 18.5312 26.9753 17.9688C26.4107 17.4062 25.6257 17.125 24.6204 17.125C23.5741 17.125 22.7788 17.4479 22.2347 18.0938C21.6914 18.7396 21.307 19.3958 21.0813 20.0625L17.9114 18.6875C18.3423 17.3542 19.1322 16.1979 20.2811 15.2188C21.4301 14.2396 22.8765 13.75 24.6204 13.75C26.7747 13.75 28.4316 14.3596 29.5912 15.5787C30.75 16.7971 31.3294 18.2604 31.3294 19.9688C31.3294 21.0104 31.109 21.9012 30.6683 22.6412C30.2268 23.3804 29.5342 24.2188 28.5904 25.1562C27.5851 26.1354 26.9749 26.88 26.7599 27.39C26.5441 27.9008 26.4361 28.7708 26.4361 30H22.897ZM24.6204 37.5C23.9434 37.5 23.364 37.2554 22.8822 36.7663C22.3997 36.2763 22.1584 35.6875 22.1584 35C22.1584 34.3125 22.3997 33.7237 22.8822 33.2337C23.364 32.7446 23.9434 32.5 24.6204 32.5C25.2975 32.5 25.8773 32.7446 26.3598 33.2337C26.8416 33.7237 27.0824 34.3125 27.0824 35C27.0824 35.6875 26.8416 36.2763 26.3598 36.7663C25.8773 37.2554 25.2975 37.5 24.6204 37.5Z" fill="white"/>
-                        <rect x="0.500305" y="0.5" width="48.2402" height="49" stroke="#FF4040"/>
+                <div class="header-img-article"></div>
+                <span class="open-info-svg" >
+                    <div>
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="44" height="44" fill="black" fill-opacity="0.2"/>
+                        <path d="M42.1875 2.8125H2.8125V42.1875H42.1875V2.8125ZM39.375 39.375H5.625V5.625H39.375V39.375Z" fill="white"/>
+                        <path d="M20.925 27C20.925 25.4812 21.0611 24.3889 21.3334 23.7229C21.6049 23.0576 22.1812 22.3312 23.0625 21.5437C23.8312 20.8687 24.417 20.2826 24.8197 19.7854C25.2232 19.2889 25.425 18.7219 25.425 18.0844C25.425 17.3156 25.1674 16.6781 24.6521 16.1719C24.1361 15.6656 23.4187 15.4125 22.5 15.4125C21.5437 15.4125 20.817 15.7031 20.3197 16.2844C19.8232 16.8656 19.4719 17.4563 19.2656 18.0563L16.3687 16.8187C16.7625 15.6187 17.4844 14.5781 18.5344 13.6969C19.5844 12.8156 20.9062 12.375 22.5 12.375C24.4687 12.375 25.983 12.9236 27.0427 14.0209C28.1017 15.1174 28.6312 16.4344 28.6312 17.9719C28.6312 18.9094 28.4299 19.7111 28.0271 20.3771C27.6236 21.0424 26.9906 21.7969 26.1281 22.6406C25.2094 23.5219 24.6517 24.192 24.4552 24.651C24.258 25.1107 24.1594 25.8938 24.1594 27H20.925ZM22.5 33.75C21.8812 33.75 21.3517 33.5299 20.9115 33.0896C20.4705 32.6486 20.25 32.1187 20.25 31.5C20.25 30.8813 20.4705 30.3514 20.9115 29.9104C21.3517 29.4701 21.8812 29.25 22.5 29.25C23.1187 29.25 23.6486 29.4701 24.0896 29.9104C24.5299 30.3514 24.75 30.8813 24.75 31.5C24.75 32.1187 24.5299 32.6486 24.0896 33.0896C23.6486 33.5299 23.1187 33.75 22.5 33.75Z" fill="white"/>
+                        <rect x="0.5" y="0.5" width="44" height="44" stroke="#DADADA"/>
                         </svg>
                     </div>
-                    <div class="warning-texts">
-                        <ul>
-                            <li class="q1" id="question-active">Todo videogame/console é igual?</li>
-                            <li class="q2">Simples e direto, qual o melhor custo benefício?</li>
-                            <li class="q3">Quais foram os critérios?</li>
-                            <li class="q4">Console ou Portátil?</li>
-                            <li class="q5">Videogame “alternativos” são bons?</li>
-                        </ul>
-                        <hr>
-                        <div class="question-1-desc" id="doubt-desc-active">
-                            <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                </span>
+                <div class="warning-wrapper">
+                    <div class="warnings">
+                        <div class="warning-title">
+                            <p>Possíeis dúvidas</p>
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.500305" y="0.5" width="48.2402" height="49" fill="#FF6666"/>
+                            <path d="M46.163 3.125H3.07782V46.875H46.163V3.125ZM43.0855 43.75H6.15533V6.25H43.0855V43.75Z" fill="white"/>
+                            <path d="M22.897 30C22.897 28.3125 23.046 27.0988 23.3439 26.3587C23.6409 25.6196 24.2716 24.8125 25.2359 23.9375C26.0771 23.1875 26.7181 22.5363 27.1587 21.9837C27.6003 21.4321 27.821 20.8021 27.821 20.0938C27.821 19.2396 27.5391 18.5312 26.9753 17.9688C26.4107 17.4062 25.6257 17.125 24.6204 17.125C23.5741 17.125 22.7788 17.4479 22.2347 18.0938C21.6914 18.7396 21.307 19.3958 21.0813 20.0625L17.9114 18.6875C18.3423 17.3542 19.1322 16.1979 20.2811 15.2188C21.4301 14.2396 22.8765 13.75 24.6204 13.75C26.7747 13.75 28.4316 14.3596 29.5912 15.5787C30.75 16.7971 31.3294 18.2604 31.3294 19.9688C31.3294 21.0104 31.109 21.9012 30.6683 22.6412C30.2268 23.3804 29.5342 24.2188 28.5904 25.1562C27.5851 26.1354 26.9749 26.88 26.7599 27.39C26.5441 27.9008 26.4361 28.7708 26.4361 30H22.897ZM24.6204 37.5C23.9434 37.5 23.364 37.2554 22.8822 36.7663C22.3997 36.2763 22.1584 35.6875 22.1584 35C22.1584 34.3125 22.3997 33.7237 22.8822 33.2337C23.364 32.7446 23.9434 32.5 24.6204 32.5C25.2975 32.5 25.8773 32.7446 26.3598 33.2337C26.8416 33.7237 27.0824 34.3125 27.0824 35C27.0824 35.6875 26.8416 36.2763 26.3598 36.7663C25.8773 37.2554 25.2975 37.5 24.6204 37.5Z" fill="white"/>
+                            <rect x="0.500305" y="0.5" width="48.2402" height="49" stroke="#FF4040"/>
+                            </svg>
                         </div>
-                        <div class="question-2-desc">
-                            <p>2Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit soluta obcaecati doloribus officia, minus harum quidem dolorem amet quam recusandae eveniet. Totam voluptatum expedita beatae vero. Consequuntur optio vitae delectus nostrum ipsum magnam impedit praesentium, reprehenderit molestiae laudantium recusandae dolorum tenetur ratione dicta quis animi repellat natus vero voluptatem nisi.</p>
+                        <div class="warning-texts">
+                            <ul>
+                                <li class="q1" id="question-active">Todo videogame/console é igual?</li>
+                                <li class="q2">Simples e direto, qual o melhor custo benefício?</li>
+                                <li class="q3">Quais foram os critérios?</li>
+                                <li class="q4">Console ou Portátil?</li>
+                                <li class="q5">Videogame “alternativos” são bons?</li>
+                            </ul>
+                            <hr>
+                            <div class="question-1-desc" id="doubt-desc-active">
+                                <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                            </div>
+                            <div class="question-2-desc">
+                                <p>2Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit soluta obcaecati doloribus officia, minus harum quidem dolorem amet quam recusandae eveniet. Totam voluptatum expedita beatae vero. Consequuntur optio vitae delectus nostrum ipsum magnam impedit praesentium, reprehenderit molestiae laudantium recusandae dolorum tenetur ratione dicta quis animi repellat natus vero voluptatem nisi.</p>
+                            </div>
+                            <div class="question-3-desc">
+                                <p>3Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laborum officia quas, in ab eveniet distinctio numquam cumque optio? Voluptatum officiis sint quos, pariatur iste eos amet vero animi ea?</p>
+                            </div>
+                            <div class="question-4-desc">
+                                <p>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, eos.</p>
+                            </div>
+                            <div class="question-5-desc">
+                                <p>5Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo est dicta quos distinctio soluta hic, quae eligendi in, quod assumenda iure officiis consectetur consequuntur corrupti, reprehenderit asperiores! Quis totam repudiandae nobis dolore ullam mollitia delectus fugiat eius est explicabo veniam dolores, et perferendis cupiditate beatae ducimus saepe reiciendis harum ad qui. Error nostrum beatae earum laborum perspiciatis ab totam officiis?</p>
+                            </div>
                         </div>
-                        <div class="question-3-desc">
-                            <p>3Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laborum officia quas, in ab eveniet distinctio numquam cumque optio? Voluptatum officiis sint quos, pariatur iste eos amet vero animi ea?</p>
+                        <div class="open-info-svg">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="39" height="39" fill="#FF6666"/>
+                                <line x1="20.5" y1="5" x2="20.5" y2="35" stroke="white"/>
+                                <line x1="5" y1="19.5" x2="35" y2="19.5" stroke="white"/>
+                                <rect x="0.5" y="0.5" width="39" height="39" stroke="#FF4040"/>
+                            </svg>
                         </div>
-                        <div class="question-4-desc">
-                            <p>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, eos.</p>
-                        </div>
-                        <div class="question-5-desc">
-                            <p>5Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo est dicta quos distinctio soluta hic, quae eligendi in, quod assumenda iure officiis consectetur consequuntur corrupti, reprehenderit asperiores! Quis totam repudiandae nobis dolore ullam mollitia delectus fugiat eius est explicabo veniam dolores, et perferendis cupiditate beatae ducimus saepe reiciendis harum ad qui. Error nostrum beatae earum laborum perspiciatis ab totam officiis?</p>
-                        </div>
-                    </div>
-                    <div class="open-info-svg">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="0.5" width="39" height="39" fill="#FF6666"/>
-                            <line x1="20.5" y1="5" x2="20.5" y2="35" stroke="white"/>
-                            <line x1="5" y1="19.5" x2="35" y2="19.5" stroke="white"/>
-                            <rect x="0.5" y="0.5" width="39" height="39" stroke="#FF4040"/>
-                        </svg>    
                     </div>
                 </div>
             </div>
             <hr class="hr-article">
+            
             <div class="article-text">
                 <p>
                     Vamos incialmente entender que há maneiras diferentes de ter sua jogatina diária, os tradicionais “Consoles/Videogames” se dividem entre os “Consoles de Mesa”, não móveis geralmente sendo uma “caixa” que vai rodar os jogos, sendo necessário uma Televisão para apresentar a imagem, e é mais difícil de se transportar, e os “Consoles portáteis”, que já tem uma tela previamente embutida neles, e é um console mais móvel, podendo ser levado onde você quiser sem muito problema. Também é possível jogar no Computador, porém não abordarei pois hoje em dia não é muito viável dado aos preços altos de peças e afins. Os Celulares como conhecemos, que tem suas próprias bibliotecas, como por exemplo a Google Play store do Android, contudo tem como foco os jogos gratuitos, que apelam para microtransações (Pequenas compras feita dentro dos jogos). Há os Computadores portáteis que vem com controles embutidos no seu design, mas são geralmente bem caros ou bem mais complicados de se mexer. Dito isso eu focarei apenas nos Consoles de Mesa e Portáteis.
@@ -321,11 +333,49 @@
                     <img src="img/switchPortable.webp" alt="">
                     <p class="img-desc">Foto de um Nintendo Switch no Modo portátil</p>
                 </div>
-                <h2>Xbox Cloud Gaming (aka Xcloud)</h2>
-                <h3>O melhor custo benefício</h3>
-                <p>O “Xcloud” explicando de maneira simples, é uma “Netflix de jogos”, mas bem limitada já que atualmente está em fase de testes, com sorte chegou ao Brasil recentemente. Chamo de “Netflix de jogos” porque basicamente ele te permite jogar o catálogo de 100 jogos dele, sem precisar ter um celular ou computador top de linha, bastando apenas uma conexão com a internet. Isso tudo funciona porque quem está rodando o jogo não é o seu dispositivo e sim o servidor que está enviando a imagem para você. O que te permite jogar via streaming / jogar na Nuvem. É mais fácil mostrar do que explicar e você pode ver ele funcionando na íntegra aqui.</p>
-                <div class="iframe-wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TfRNBlYIudY?start=57" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div id="Sec1" class="section-1">
+                    <h2 class="">Xbox Cloud Gaming (aka Xcloud)</h2>
+                    <h3>O melhor custo benefício</h3>
+                    <p>O “Xcloud” explicando de maneira simples, é uma “Netflix de jogos”, mas bem limitada já que atualmente está em fase de testes, com sorte chegou ao Brasil recentemente. Chamo de “Netflix de jogos” porque basicamente ele te permite jogar o catálogo de 100 jogos dele, sem precisar ter um celular ou computador top de linha, bastando apenas uma conexão com a internet. Isso tudo funciona porque quem está rodando o jogo não é o seu dispositivo e sim o servidor que está enviando a imagem para você. O que te permite jogar via streaming / jogar na Nuvem. É mais fácil mostrar do que explicar e você pode ver ele funcionando na íntegra aqui.</p>
+                    <div class="iframe-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TfRNBlYIudY?start=57" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div id="Sec2" class="section-2">
+                    <h2 class="">Section 2</h2>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium cupiditate culpa animi aperiam iste exercitationem repudiandae, aliquid, temporibus debitis optio delectus consectetur. Et, ea illum? Ad, libero, eos, dicta at animi distinctio eligendi accusantium facilis deleniti quo odio? Sequi pariatur quos sapiente repellat, dicta odio laboriosam obcaecati ipsa! Veritatis?</p>
+                    <div class="img-wrapper">
+                        <img src="img/drakengard3.jpg" alt="">
+                        <p class="img-desc">Drakengard 3</p>
+                    </div>
+                </div>
+                <div id="Sec3" class="section-3">
+                    <h2 class="">Section 3</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit voluptatem, quisquam dicta porro harum aliquid, aliquam exercitationem tempora pariatur eaque cupiditate recusandae labore maiores soluta rem nulla magnam quasi, molestias sapiente quaerat. Maxime asperiores odio perferendis dolorum quae veniam explicabo, perspiciatis praesentium corrupti facere non commodi recusandae deserunt, repudiandae fugiat!</p>
+                    <div class="img-wrapper">
+                        <img src="img/japan.jpg" alt="">
+                        <p class="img-desc">Japão</p>
+                    </div>
+                </div>
+                <div id="Sec4" class="section-4">
+                    <h2 class="">Section 4</h2>
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates possimus aperiam ipsa quisquam eius ipsam maxime deleniti necessitatibus repudiandae repellendus dolore vel laboriosam at maiores veniam adipisci, laborum animi tenetur consequatur quasi quo reiciendis. Alias quibusdam, nesciunt mollitia, similique facere sint maxime perferendis quia maiores pariatur consequuntur tenetur ipsum voluptatum nisi. Tempore magnam minus cum incidunt, dolorem alias sequi, ratione hic nobis provident ipsa pariatur consequuntur, architecto tempora aliquid quaerat!</p>
+                    <div class="img-wrapper">
+                        <img src="img/animeCity.gif" alt="">
+                        <p class="img-desc">Anime City</p>
+                    </div>
+                </div>
+                <div id="Sec5" class="section-5">
+                    <h2 class="">Section 5</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione non ab! Cumque impedit cum eligendi a exercitationem quam culpa aut! Asperiores dicta magni laboriosam possimus laudantium at eos? Provident nobis quis sint ullam tenetur!</p>
+                    <div class="img-wrapper">
+                        <img src="img/city.gif" alt="">
+                        <p class="img-desc">City</p>
+                    </div>
                 </div>
             </div>
             

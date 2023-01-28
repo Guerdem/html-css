@@ -23,6 +23,7 @@
 --font-size-24: 24px;
 --font-size-26: 26px;
 --font-size-28: 28px;
+--font-size-30: 30px;
 --font-size-48: 48px;
 /**/
 
@@ -91,8 +92,13 @@ html {
     margin: 0;
     list-style: none;
     text-decoration: none;
+    scroll-margin-top: calc(var(--nav-height) + 40px);
 }
 
+.light-theme a {
+  color: black;
+  background-color: white;
+}
 
 body {
   background-color: var(--light-theme);
@@ -143,40 +149,100 @@ aside {
   border-color: var(--border-color);
   font-family: var(--main-font-Inter);
   overflow-x: hidden;
-
+  
   .aside-wrapper {
     margin-bottom: 60px;
   }
 
+  
+
+  .navTopo-wrapper {
+    display: flex;
+    width: 100vw;
+    padding: 16px 100px;
+    border-bottom: 1px solid;
+    border-color: var(--border-color);
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    left: 0!important;
+  
+
   h1 {
+    display: flex;
+    justify-content: center;
     color: var(--top-color);
     font-size: var(--font-size-28);
     font-weight: normal;
     border: 1px solid;
     border-color: var(--border-color);
-    margin: 18px 70px;
+    margin: 0px;
     padding: 4px 5px;
-    width: 180px;
+    transition: 100ms;
+  }
+
+  .active {
+    font-size: var(--font-size-30);
+    color: white;
+    background-color: var(--dark);
+  }
+}
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
   }
 
   .up-select {
-    font-size: var(--font-size-24);
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-20);
     font-weight: bold;
-    margin-top: 20px;
-  } #up-selected {
-    background-color: var(--dark);
+    margin-top: 10px;
+    padding: 8px 10px;
+    transition: 100ms;
+  } .up-select:hover {
+    background-color: rgba(0, 0, 0, 0.107);
+    padding: 8px 10px;
+  } 
+  
+  ul > .active {
+    background-color: var(--dark) !important;
+    font-size: var(--font-size-22);
     color: var(--light);
-    width: 4.6em;
-    padding: 5px 10px;
-  }
+    padding: 8px 10px;
+  } 
+  
 
 
   .sub-select {
-    font-size: var(--font-size-20);
+    font-size: var(--font-size-18);
     margin-left: 170px;
     margin-top: 5px;
     padding: 5px;
+    cursor: default;
   }
+  
+  .underline {
+    background-image: linear-gradient(black, black);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+  } .underline:hover {
+    background-size: 100% 2px;
+  }
+
+  .subActive { 
+    text-decoration: underline;
+    text-decoration-skip: 1px;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+  
 
   h1,.up-select{
     margin-left: 100px;
@@ -359,6 +425,7 @@ aside {
 main {
   margin-left: var(--aside-widthMargin);
   position: relative;
+  
 
   
 
@@ -376,7 +443,7 @@ main {
     span {
       
       div {
-        position: fixed;
+      position: fixed;
       margin-left: var(--aside-widthMargin);
       cursor: pointer;
       margin-top: var(--nav-height);
@@ -622,7 +689,10 @@ main {
 
       img {
         max-width: 100%;
+        width: var(--text-article-width);
         margin-top: var(--article-imgVideo-marginTop);
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
