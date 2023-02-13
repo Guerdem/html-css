@@ -1,8 +1,23 @@
+const $html = document.querySelector('html')
+const switchTheme = document.getElementById('darkLight')
+const switchDark = document.querySelector('.toDark')
+const switchLight = document.querySelector('.toLight')
+
+switchDark.addEventListener('click', () =>{
+  $html.classList.add('dark-mode')
+  switchDark.removeAttribute('id')
+  switchLight.setAttribute('id','toggle')
+})
+
+switchLight.addEventListener('click', () =>{
+  $html.classList.remove('dark-mode')
+  switchLight.removeAttribute('id')
+  switchDark.setAttribute('id','toggle')
+})
 
 
 /*Web Open Questions Options*/
 var questionsSvg = document.querySelectorAll('.open-info-svg')
-
 const questions = questionsSvg[0]
 const questions1 = questionsSvg[1]
 
@@ -11,7 +26,6 @@ const closeQ = document.querySelector('.close-extra-info')
 
 /*Extra Questions*/
 const questionsSection = document.querySelector('div.extra-questions-closed')
-
 
 
 /*Expand Extra Questions*/
@@ -29,6 +43,7 @@ closeQ.addEventListener('click', () =>{
     questionsSection.removeAttribute('id')
 })
 
+
 /*Questions*/
 var doubt1 = document.querySelector('.q1')
 var doubt2 = document.querySelector('.q2')
@@ -45,119 +60,120 @@ var doubtDesc5 = document.querySelector('.question-5-desc')
 
 
 /*Change questions and questions descriptions*/
-
 doubt1.addEventListener("mouseover", function() {
-    this.style.color = "black";
+    this.style.color = "var(--dark-light-color)";
     this.style.textDecoration = "underline";
     doubtDesc1.setAttribute('id','doubt-desc-active')
 
-    doubt2.style.color = "grey";
+    doubt2.style.color = "var(--blackWhite-Scale-60";
     doubt2.style.textDecoration = "none";  
     doubtDesc2.removeAttribute('id')   
 
-    doubt3.style.color = "grey";
+    doubt3.style.color = "var(--blackWhite-Scale-60";
     doubt3.style.textDecoration = "none";  
     doubtDesc3.removeAttribute('id')
 
-    doubt4.style.color = "grey";
+    doubt4.style.color = "var(--blackWhite-Scale-60";
     doubt4.style.textDecoration = "none";  
     doubtDesc4.removeAttribute('id')
 
-    doubt5.style.color = "grey";
+    doubt5.style.color = "var(--blackWhite-Scale-60";
     doubt5.style.textDecoration = "none";  
     doubtDesc5.removeAttribute('id')
 }) 
 
 doubt2.addEventListener("mouseover", function() {
-    this.style.color = "black";
+    this.style.color = "var(--dark-light-color)";
     this.style.textDecoration = "underline";
     doubtDesc2.setAttribute('id','doubt-desc-active')
     
-    doubt1.style.color = "grey";
+    doubt1.style.color = "var(--blackWhite-Scale-60";
     doubt1.style.textDecoration = "none";  
     doubtDesc1.removeAttribute('id')  
 
-    doubt3.style.color = "grey";
+    doubt3.style.color = "var(--blackWhite-Scale-60";
     doubt3.style.textDecoration = "none";  
     doubtDesc3.removeAttribute('id')
 
-    doubt4.style.color = "grey";
+    doubt4.style.color = "var(--blackWhite-Scale-60";
     doubt4.style.textDecoration = "none";  
     doubtDesc4.removeAttribute('id')
 
-    doubt5.style.color = "grey";
+    doubt5.style.color = "var(--blackWhite-Scale-60";
     doubt5.style.textDecoration = "none";  
     doubtDesc5.removeAttribute('id')
 })
 
 
 doubt3.addEventListener("mouseover", function() {
-    this.style.color = "black";
+    this.style.color = "var(--dark-light-color)";
     this.style.textDecoration = "underline";
     doubtDesc3.setAttribute('id','doubt-desc-active')
 
-    doubt1.style.color = "grey";
+    doubt1.style.color = "var(--blackWhite-Scale-60";
     doubt1.style.textDecoration = "none";  
     doubtDesc1.removeAttribute('id')
     
-    doubt2.style.color = "grey";
+    doubt2.style.color = "var(--blackWhite-Scale-60";
     doubt2.style.textDecoration = "none";  
     doubtDesc2.removeAttribute('id')
 
-    doubt4.style.color = "grey";
+    doubt4.style.color = "var(--blackWhite-Scale-60";
     doubt4.style.textDecoration = "none";  
     doubtDesc4.removeAttribute('id')
 
-    doubt5.style.color = "grey";
+    doubt5.style.color = "var(--blackWhite-Scale-60";
     doubt5.style.textDecoration = "none";  
     doubtDesc5.removeAttribute('id')
 })
 
 
 doubt4.addEventListener("mouseover", function() {
-    this.style.color = "black";
+    this.style.color = "var(--dark-light-color)";
     this.style.textDecoration = "underline";
     doubtDesc4.setAttribute('id','doubt-desc-active')
 
-    doubt1.style.color = "grey";
+    doubt1.style.color = "var(--blackWhite-Scale-60";
     doubt1.style.textDecoration = "none"; 
     doubtDesc1.removeAttribute('id')
     
-    doubt2.style.color = "grey";
+    doubt2.style.color = "var(--blackWhite-Scale-60";
     doubt2.style.textDecoration = "none";  
     doubtDesc2.removeAttribute('id')  
 
-    doubt3.style.color = "grey";
+    doubt3.style.color = "var(--blackWhite-Scale-60";
     doubt3.style.textDecoration = "none";  
     doubtDesc3.removeAttribute('id')
 
-    doubt5.style.color = "grey";
+    doubt5.style.color = "var(--blackWhite-Scale-60";
     doubt5.style.textDecoration = "none";  
     doubtDesc5.removeAttribute('id')
 })      
 
 doubt5.addEventListener("mouseover", function() {
-    this.style.color = "black";
+    this.style.color = "var(--dark-light-color)";
     this.style.textDecoration = "underline";
     doubtDesc5.setAttribute('id','doubt-desc-active')
 
-    doubt1.style.color = "grey";
+    doubt1.style.color = "var(--blackWhite-Scale-60";
     doubt1.style.textDecoration = "none";  
     doubtDesc1.removeAttribute('id')
     
-    doubt2.style.color = "grey";
+    doubt2.style.color = "var(--blackWhite-Scale-60";
     doubt2.style.textDecoration = "none";  
     doubtDesc2.removeAttribute('id')   
 
-    doubt3.style.color = "grey";
+    doubt3.style.color = "var(--blackWhite-Scale-60";
     doubt3.style.textDecoration = "none";  
     doubtDesc3.removeAttribute('id')
 
-    doubt4.style.color = "grey";
+    doubt4.style.color = "var(--blackWhite-Scale-60";
     doubt4.style.textDecoration = "none";  
     doubtDesc4.removeAttribute('id')
 })
 
+
+/*Scroll-awareness*/
 function selectElementByClass(className) {
     return document.querySelector(`.${className}`);
   }
@@ -182,7 +198,7 @@ const navSections = {
 
 const observerOptions = {
     root: null,
-    rootMargin: '0px',
+    rootMargin: '100px',
     threshold: 0.7,
   };
 
@@ -210,7 +226,32 @@ const observerOptions = {
   sections.forEach((sec) => observer.observe(sec));
 
 
-console.log(navSections)
+console.log(IntersectionObserverEntry)
+
+
+
+const hideAside = document.querySelector('.hide-aside-wrapper')
+const aside = document.querySelector('aside')
+
+const openAside = document.querySelector('.open-aside')
+const openAsideWrapper = document.querySelector('.open-aside-wrapper')
+
+hideAside.addEventListener('click', () => {
+  aside.classList.add('hiddenAside')
+  aside.style.width = "70px";
+  openAsideWrapper.style.display = "block";
+})
+
+openAside.addEventListener('click', () => {
+  openAsideWrapper.style.display = "none";
+  aside.classList.remove('hiddenAside')
+})
+
+
+
+console.log(openAside)
+
+
 
 
 
