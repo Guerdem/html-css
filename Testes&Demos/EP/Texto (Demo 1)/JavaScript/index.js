@@ -232,24 +232,35 @@ console.log(IntersectionObserverEntry)
 
 const hideAside = document.querySelector('.hide-aside-wrapper')
 const aside = document.querySelector('aside')
-
 const openAside = document.querySelector('.open-aside')
 const openAsideWrapper = document.querySelector('.open-aside-wrapper')
 
+const questionAside = document.querySelector('.info-svg')
+const main = document.querySelector('main')
+
+
+
+
+
 hideAside.addEventListener('click', () => {
-  aside.classList.add('hiddenAside')
-  aside.style.width = "70px";
+  aside.style.display = "none"
+  questionAside.style.marginLeft = "var(--asideHidden-widthMargin)";
+  openAsideWrapper.style.visibility = "visible";
   openAsideWrapper.style.display = "block";
+  main.style.opacity = 1;
 })
 
 openAside.addEventListener('click', () => {
-  openAsideWrapper.style.display = "none";
-  aside.classList.remove('hiddenAside')
+  openAsideWrapper.style.visibility = "hidden";
+  openAsideWrapper.style.display = "var(--visibleHidden-aside)";
+  questionAside.style.marginLeft = "var(--aside-widthMargin)";
+  aside.style.display = "block";
+  main.style.opacity = "var(--asideShadow)";
 })
 
 
 
-console.log(openAside)
+console.log(main)
 
 
 
