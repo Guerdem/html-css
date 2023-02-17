@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --visibleHidden-aside: none;
-  --asideShadow: 1;
+  --asideCollapseDisplay: none;
   /* Font-Family */
   --main-font-Inter: "Inter", sans-serif;
   --text-font-roboto: "Roboto", sans-serif;
@@ -141,7 +141,12 @@ header .switch-darkLight #toggle {
   top: var(--nav-height);
   z-index: 997;
   width: var(--asideHidden-widthMargin);
-  height: 90vh;
+  height: calc(var(--nav-height) - 100vh);
+}
+.open-aside-wrapper div {
+  background-color: var(--main-background-color);
+  width: var(--asideHidden-widthMargin);
+  height: 100vh;
 }
 .open-aside-wrapper svg {
   position: relative;
@@ -194,16 +199,27 @@ header .switch-darkLight #toggle {
   flex-direction: row;
 }
 
+.asideCollapse {
+  display: none;
+  position: fixed;
+  z-index: 997;
+  background-color: grey;
+  opacity: 0.3;
+  width: 100vw;
+  height: 100vh;
+  border: 0;
+}
+
 aside {
   display: block;
   transform: translateX(0%);
   position: sticky;
   top: var(--nav-height);
-  z-index: 997;
+  z-index: 998;
   background-color: var(--main-background-color);
   width: var(--aside-widthMargin);
   min-width: 300px;
-  height: 90vh;
+  height: calc(var(--nav-height) - 100vh);
   font-family: var(--main-font-Inter);
 }
 aside .navTopo-wrapper {
@@ -268,6 +284,7 @@ aside ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: var(--main-background-color);
 }
 aside .secSelectWrapper {
   overflow-y: auto;
@@ -347,12 +364,12 @@ main article #info-svg {
 }
 main article span div {
   position: fixed;
-  z-index: 996;
+  z-index: 997;
   margin-left: var(--aside-widthMargin);
   cursor: pointer;
   margin-top: var(--nav-height);
   left: 20px;
-  top: 84%;
+  bottom: 20px;
 }
 main article span div path {
   fill: white;
@@ -712,7 +729,7 @@ main article .article-text img {
 @media screen and (max-width: 78.125em) {
   :root {
     --visibleHidden-aside: block;
-    --asideShadow: 0.6;
+    --asideCollapseDisplay: block;
     /* Font-size */
     --font-size-18: 16px;
     --font-size-20: 18px;
@@ -745,7 +762,7 @@ main article .article-text img {
     top: var(--nav-height);
     z-index: 997;
     width: var(--asideHidden-widthMargin);
-    height: 100vh;
+    height: calc(var(--nav-height) - 100vh);
   }
   .open-aside-wrapper svg {
     position: relative;
@@ -760,12 +777,22 @@ main article .article-text img {
     display: flex;
     flex-direction: row;
   }
+  .asideCollapse {
+    display: none;
+    position: fixed;
+    z-index: 997;
+    background-color: grey;
+    opacity: 0.3;
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+  }
   aside {
     display: block;
     transform: translateX(0%);
     position: fixed;
     top: var(--nav-height);
-    z-index: 997;
+    z-index: 998;
     background-color: var(--main-background-color);
     width: var(--aside-widthMargin);
     min-width: 300px;
@@ -892,6 +919,7 @@ main article .article-text img {
   }
   main {
     position: relative;
+    z-index: 996;
     width: 100%;
     min-width: 400px;
     padding: 0px 25px;
@@ -916,7 +944,7 @@ main article .article-text img {
     cursor: pointer;
     margin-top: var(--nav-height);
     left: 20px;
-    top: 84%;
+    bottom: 20px;
   }
   main article span div path {
     fill: white;

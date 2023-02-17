@@ -236,7 +236,7 @@ const openAside = document.querySelector('.open-aside')
 const openAsideWrapper = document.querySelector('.open-aside-wrapper')
 
 const questionAside = document.querySelector('.info-svg')
-const main = document.querySelector('main')
+const asideCollapse = document.querySelector('.asideCollapse')
 
 
 
@@ -247,7 +247,15 @@ hideAside.addEventListener('click', () => {
   questionAside.style.marginLeft = "var(--asideHidden-widthMargin)";
   openAsideWrapper.style.visibility = "visible";
   openAsideWrapper.style.display = "block";
-  main.style.opacity = 1;
+  asideCollapse.style.display = "none";
+})
+
+asideCollapse.addEventListener('click', () =>{
+  aside.style.display = "none"
+  questionAside.style.marginLeft = "var(--asideHidden-widthMargin)";
+  openAsideWrapper.style.visibility = "visible";
+  openAsideWrapper.style.display = "block";
+  asideCollapse.style.display = "none";
 })
 
 openAside.addEventListener('click', () => {
@@ -255,7 +263,7 @@ openAside.addEventListener('click', () => {
   openAsideWrapper.style.display = "var(--visibleHidden-aside)";
   questionAside.style.marginLeft = "var(--aside-widthMargin)";
   aside.style.display = "block";
-  main.style.opacity = "var(--asideShadow)";
+  asideCollapse.style.display = "var(--asideCollapseDisplay)";
 })
 
 

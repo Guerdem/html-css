@@ -7,7 +7,7 @@
 :root {
 
 --visibleHidden-aside: none;
---asideShadow: 1;
+--asideCollapseDisplay: none;
 
 /* Font-Family */
 
@@ -174,7 +174,13 @@ header {
     top: var(--nav-height);
     z-index: 997;
     width: var(--asideHidden-widthMargin);
-    height: 90vh;
+    height: calc(var(--nav-height) - 100vh);
+
+    div {
+      background-color: var(--main-background-color);
+      width: var(--asideHidden-widthMargin);
+      height: 100vh;
+    }
 
     svg {
       position: relative;
@@ -237,16 +243,27 @@ header {
   flex-direction: row;
 }
 
+.asideCollapse {
+  display: none;
+  position: fixed;
+  z-index: 997;
+  background-color: grey;
+  opacity: 0.3;
+  width: 100vw;
+  height: 100vh;
+  border: 0;
+}
+
 aside {
   display: block;
   transform: translateX(0%);
   position: sticky;
   top: var(--nav-height);
-  z-index: 997;
+  z-index: 998;
   background-color: var(--main-background-color);
   width: var(--aside-widthMargin);
   min-width: 300px;
-  height: 90vh;
+  height: calc(var(--nav-height) - 100vh);
   font-family: var(--main-font-Inter);
   
   .navTopo-wrapper {
@@ -322,6 +339,7 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--main-background-color);
   }
 
   .secSelectWrapper {
@@ -418,12 +436,12 @@ main {
       
       div {
       position: fixed;
-      z-index: 996;
+      z-index: 997;
       margin-left: var(--aside-widthMargin);
       cursor: pointer;
       margin-top: var(--nav-height);
       left: 20px;
-      top: 84%;
+      bottom: 20px;
       
       path {
         fill: white;
@@ -877,7 +895,7 @@ main {
   :root {
 
 --visibleHidden-aside: block;
---asideShadow: 0.6;
+--asideCollapseDisplay: block;
 
 /* Font-size */
 --font-size-18: 16px;
@@ -920,7 +938,7 @@ main {
   top: var(--nav-height);
   z-index: 997;
   width: var(--asideHidden-widthMargin);
-  height: 100vh;
+  height: calc(var(--nav-height) - 100vh);
 
 
   svg {
@@ -940,12 +958,23 @@ main {
   flex-direction: row;
 }
 
+.asideCollapse {
+  display: none;
+  position: fixed;
+  z-index: 997;
+  background-color: grey;
+  opacity: 0.3;
+  width: 100vw;
+  height: 100vh;
+  border: 0;
+}
+
 aside {
   display: block;
   transform: translateX(0%);
   position: fixed;
   top: var(--nav-height);
-  z-index: 997;
+  z-index: 998;
   background-color: var(--main-background-color);
   width: var(--aside-widthMargin);
   min-width: 300px;
@@ -1097,6 +1126,7 @@ aside {
 
 main {
   position: relative;
+  z-index: 996;
   width: 100%;
   min-width: 400px;
   padding: 0px 25px;
@@ -1124,7 +1154,7 @@ main {
       cursor: pointer;
       margin-top: var(--nav-height);
       left: 20px;
-      top: 84%;
+      bottom: 20px;
       
       path {
         fill: white;
