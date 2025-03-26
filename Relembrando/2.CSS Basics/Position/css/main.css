@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+}
+
+.shop-item {
+  width: 300px;
+  max-height: 400px;
+  position: relative;
+  margin: 10px;
+}
+.shop-item img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.shop-item .discount-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  padding: 8px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shop-item .background-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.425);
+  height: 100px;
+}
+.shop-item .add-to-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  padding: 8px 14px;
+  font-family: "roboto";
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.flex-shrink-test {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 800px;
+}
+.flex-shrink-test .blue {
+  background-color: blue;
+  flex: 500px;
+}
+.flex-shrink-test .green {
+  background-color: green;
+  flex: 500px;
+}
+.flex-shrink-test .yellow {
+  background-color: yellow;
+  flex: 500px;
+}/*# sourceMappingURL=main.css.map */

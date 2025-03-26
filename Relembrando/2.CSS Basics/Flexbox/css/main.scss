@@ -1,0 +1,218 @@
+@charset 'UTF-8';
+
+body {
+    padding-bottom: 1000px;
+}
+
+.tab-info {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    border-style: solid;
+    border-color: rgb(216, 216, 216);
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    margin: 3px 12px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        margin: 8px 0px;
+        font-family: 'roboto';
+        font-weight: 400;
+    }
+
+    span {
+        background-color: rgb(70, 120, 228);
+        color: white;
+        border-radius: 12px;
+        padding: 2px 10px;
+    }
+}
+
+.profile-tab {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    button {
+        background-color: #4093F0;
+        font-size: 15px;
+        color: white;
+        padding: 7px 14px;
+        border-style: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.profile-img-info {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-family: 'roboto';
+        margin: 0px 0px 4px 0px;
+        font-size: 15px;
+    }
+
+    .sub-info {
+        color: grey;
+    }
+
+    #element {
+        font-size: 13px;
+    }
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7354AD;
+    margin: 0;
+    padding: 10px 15px;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: 'roboto';
+        font-weight: 600px;
+    }
+
+    input {
+        width: 600px;
+        border-radius: 50px;
+        border-style: none;
+        text-indent: 20px;
+        margin: 0px 30px;
+        height: 30px;
+    }
+
+    button {
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 1px;
+        background-color: #7354AD;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        padding: 8px 20px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #5a418a;
+    }
+}
+
+.inboxes {
+    max-width: 500px;
+    padding: 10px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-width: 1px;
+    border-color: grey;
+    border-style: none;
+    box-shadow: 1px 1px 6px rgb(209, 209, 209);
+    
+    .all-inboxes {
+        font-size: 13px;
+        color: grey;
+        margin-bottom: 6px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .inbox-item {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        
+    }
+
+    .inbox-infos {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        .inbox-info-section {
+            margin-left: 10px;
+            overflow: auto;
+            p {
+                margin-bottom: 3px;
+            }
+            
+            .title-time-inline {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1px;
+            }
+
+            .title {
+                font-family: 16px;
+            }
+
+            .time {
+                font-size: 12px;
+            }
+
+            .inbox-main-info {
+                font-size: 14px;
+            }
+
+            .inbox-sub-info {
+                font-size: 14px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .title, .inbox-main-info {
+                font-weight: bold;
+            }
+
+            .time, .inbox-sub-info {
+                color: grey;
+            }
+        }
+    }
+}

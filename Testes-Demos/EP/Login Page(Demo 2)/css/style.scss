@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+:root {
+
+/*Fonts*/
+
+--main-font: 'Roboto', sans-serif;
+--sub-font: 'Roboto Slab', serif;
+
+--L-font-size: 2rem;
+--M-font-size: 1.5rem;
+--S-font-size: 1rem;
+
+/*Colors*/
+
+--main-background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,54,1) 68%, rgba(255,0,0,1) 100%);
+--header-background-color: hsla(0, 0%, 56%, 0.598);
+
+--light: white;
+--dark: black;
+
+
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,54,1) 79%, rgba(166,10,73,1) 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: var(--main-font);
+    color: var(--light);
+}
+
+/*Generic Class*/
+
+.nav-width {
+    max-width: 70rem;
+}
+
+.page-width {
+    max-width: 100rem;
+    width: 100%;
+}
+
+/**/
+
+header {
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: var(--M-font-size);
+    background-color: var(--header-background-color);
+
+    a {
+        color: var(--light);
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 15px 10px;
+        text-transform: uppercase;
+
+        a:focus {
+            background-color: rgba(17, 17, 18, 0.453);
+        }
+
+        a {
+            padding: 5px;
+            border-radius: 2px;
+            background-color: rgb(16, 16, 16);
+        }
+
+        a:hover {
+            background-color: rgba(17, 17, 18, 0.453);
+        }
+
+        ul {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                background-color: rgba(17, 17, 18, 0.183);
+                padding: 5px;
+
+                
+            }         
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 60px auto;
+    padding: 0px 10px;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+
+    .form-image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: wheat;
+        padding: 1rem;
+
+        img {
+            max-width: 100%;
+            width: 31rem;
+        }
+    }
+
+    .form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: black;
+        background-color: white;
+        padding: 3rem;
+    }
+
+    .form-header {
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 5rem;
+            height: 0.3rem;
+            background-color: rgb(157, 104, 255);
+            margin: 0 auto;
+            position: absolute;
+            border-radius: 5px;
+        }
+    }
+
+    .login-button {
+        display: flex;
+        align-items: center;
+
+        button {
+            border: none;
+            background-color: rgb(157, 104, 255);
+            padding: 0.4rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+
+            a {
+                font-weight: 500;
+                color: white;
+            }
+        }
+
+        :hover {
+                background-color: rgb(133, 67, 255);
+            }
+    }
+
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.1rem;
+
+        input {
+            margin: 0.6rem 0;
+            padding: 0.8rem 1.2rem;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 6px #0000001c; 
+        }
+
+        input:hover {
+                background-color: #eeeeee75;
+            }
+
+        input:focus-visible {
+            outline: 1px solid rgb(157, 104, 255);
+        }
+        
+        ::placeholder {
+            color: #000000be;
+        }
+    }
+
+    .input-box label, .gender-title h6 {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #000000c0
+    }
+
+    .gender-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.62rem;
+        padding: 0 0.5rem;
+    }
+
+    .gender-input {
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-right: 0.35rem;
+        }
+
+        label {
+            font-size: 0.81rem;
+            font-weight: 600;
+            color: #000000c0;
+        }
+    }
+
+    .continue-button {
+
+        button:hover {
+            background-color: rgb(133, 67, 255);
+        }
+
+        button {
+            width: 100%;
+            margin-top: 2.5rem;
+            border: none;
+            background-color: rgb(157, 104, 255);
+            padding: 0.62rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+
+        a {
+            text-decoration: none;
+            font-size: 0.93rem;
+            font-weight: 500;
+            color: white;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 85em){
+
+    .container {
+        width: 50%;
+
+        .form {
+            width: 100%;
+        }
+
+       .form-image {
+        display: none;
+        }
+} 
+    } 
+
+
+    @media screen and (max-width: 69em){
+        
+        .container {
+            width: 90%;
+            height: auto;
+
+    
+            .input-group {
+                flex-direction: column;
+                overflow-y: scroll;
+                flex-wrap: nowrap;
+                max-height: 10rem;
+                padding-right: 5rem;
+            }
+
+            .gender-inputs {
+                margin-top: 2rem;
+            }
+
+            .gender-group {
+                flex-direction: column;
+            }
+
+            .gender-input {
+                margin-top: 0.5rem;
+            }
+    } 
+    }
+
+

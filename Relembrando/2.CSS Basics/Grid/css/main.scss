@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+.grid-first-example {
+    display: grid;
+    grid-template-columns: 200px 75px;
+    height: 50px;
+
+    .grid0 {
+        background-color: rgb(86, 236, 86);
+    }
+
+    .grid1 {
+        background-color: rgb(226, 226, 93);
+    }
+}
+
+.grid-second-example {
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+
+    .col1 {
+        background-color: rgb(86, 236, 86);
+    }
+
+    .col2 {
+        background-color: rgb(226, 226, 93);
+    }
+
+    .col3 {
+        background-color: rgb(86, 236, 86);
+    }
+}
+
+.grid-third-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 10px;
+
+    div {
+        background-color: rgb(86, 236, 86);
+    }
+}

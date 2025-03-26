@@ -1,0 +1,172 @@
+@charset 'UTF-8';
+
+:root {
+    --join-button-color: #1954b3;
+    --join-button-color-active: var(--join-button-color);
+    --join-button-background: white;
+    --tweet-button-background: #028DF1;
+    --tweet-button-color: white;
+
+}
+
+.firstTest-buttons button {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.youtube {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    border-radius: 3px;
+    border-style: none;
+    background-color: #d10000;
+    color: white;
+    padding: 13px 20px;
+    box-shadow: 1px 1px 1px rgb(184, 184, 184);
+    transition: 0.4s;
+    cursor: pointer;   
+}
+
+.youtube:hover {
+    opacity: 60%;
+}
+
+.youtube:active {
+    opacity: 40%;
+}
+
+.join {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 18px;
+    background-color: var(--join-button-background);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: var(--join-button-color);
+    border-color: var(--join-button-color);
+    padding: 13px 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.join:hover {
+    color: var(--join-button-background);
+    border-color: var(--join-button-background);
+    background-color: var(--join-button-color);
+}
+
+.join:active {
+    background-color: var(--join-button-color-active);
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+.tweet-button {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--tweet-button-background);
+    color: var(--tweet-button-color);
+    border-style: none;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: var(--tweet-button-background);
+    padding: 12px 24px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.tweet-button:hover {
+    background-color: var(--tweet-button-color);
+    color: var(--tweet-button-background);
+}
+
+.button-shadowBox {
+    color: aliceblue;
+    font-size: 16px;
+    padding: 10px;
+    background-color: green;
+    border-style: none;
+    box-shadow: 0px 0px 0px white;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+
+.button-shadowBox:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.page-buttons {
+    vertical-align: middle;
+    
+    .first-element {
+        margin-left: 15px;
+    }
+
+    .last-element {
+        margin-right: 15px;
+    }
+
+    a {
+        font-size: 20px;
+        margin: 0px 4px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+}
+
+.stretch-button {
+
+    button {
+        font-size: 22px;
+        padding: 15px 30px;
+        background-color: green;
+        color: white;
+        border-style: none;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    button:hover {
+        padding: 30px 60px;
+    }
+}
+
+.TriDButton {
+
+    button {
+        font-size: 22px;
+        padding: 15px 30px;
+        background-color: green;
+        color: white;
+        border-style: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+    }
+
+    button:active {
+        margin: 5px 5px;
+        box-shadow: 2px 2px 5px white;
+    }
+}
+
+.multipleStrach-buttons {
+
+    button {
+        padding: 10px 20px;
+        background-color: green;
+        margin: 0px 10px;
+        font-size: 20px;
+        color: white;
+        border-style: none;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    button:hover {
+        padding: 10px 30px;
+        margin: 0px 0px;
+    }
+}

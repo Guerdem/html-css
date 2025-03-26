@@ -1,0 +1,170 @@
+.display-firstExample input {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.display-secondExample {
+  display: block;
+}
+.display-secondExample p {
+  width: 400px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.display-secondExample .buttons {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.display-thirdExample {
+  width: 600px;
+}
+.display-thirdExample img {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+}
+.display-thirdExample input {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: left;
+  text-indent: 15px;
+  width: 500px;
+  height: 40px;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow: 1px 1px 5px rgb(160, 160, 160);
+  color: #000000;
+}
+
+.display-fourthExample {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+}
+.display-fourthExample input, .display-fourthExample button {
+  box-sizing: border-box;
+  padding: 13px;
+  margin: 6px 0px;
+  border-radius: 10px;
+  border-style: solid;
+}
+.display-fourthExample .firstName {
+  width: 200px;
+}
+.display-fourthExample .lastName {
+  width: 200px;
+}
+.display-fourthExample .email {
+  width: 406px;
+  display: block;
+}
+.display-fourthExample button {
+  border-style: none;
+  width: 406px;
+  padding: 15px 0px;
+  background-color: rgb(69, 140, 221);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.div-firstExample {
+  width: 400px;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
+  font-size: 20px;
+}
+.div-firstExample p, .div-firstExample button {
+  margin: 0;
+}
+.div-firstExample p {
+  margin-bottom: 10px;
+}
+
+.friendGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.friendGrid .friendElement {
+  max-width: 300px;
+  padding-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0px 0px 20px 0px;
+  box-shadow: 1px 1px 4px grey;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: top;
+}
+.friendGrid .friendElement .name {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.friendGrid .friendElement .numberOfFriend {
+  overflow: hidden;
+  color: grey;
+  margin-bottom: 5px;
+}
+.friendGrid .friendElement button {
+  background-color: #3B75E5;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 3px;
+  border-style: none;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.friendGrid .friendElement p, .friendGrid .friendElement button {
+  margin: 5px 0px 0px 10px;
+}
+.friendGrid .friendElement img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.profile-info {
+  width: 500px;
+  vertical-align: middle;
+}
+.profile-info img {
+  vertical-align: middle;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+.profile-info .profileData {
+  display: inline-block;
+  vertical-align: middle;
+}
+.profile-info .profileData p {
+  font-family: "roboto";
+  font-size: 15px;
+  margin: 3px 5px;
+}
+.profile-info .profileData .type, .profile-info .profileData .elemental {
+  color: grey;
+}
+.profile-info button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 150px;
+  background-color: #5184eb;
+  color: white;
+  border-style: none;
+  border-radius: 6px;
+  font-size: 15px;
+  padding: 10px 12px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

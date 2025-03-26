@@ -1,0 +1,47 @@
+:root {
+  --item-name-fontSize: 30px;
+  --item-name-fontColor: black;
+  --item-price-stock-fontSize: 22px;
+  --item-price-stock-fontColor: rgb(0, 118, 0);
+  --item-shipping-fontSize: 20px;
+  --item-shipping-fontColor: black;
+  --button-addToCart-color: rgb(255, 216, 20);
+  --button-buy-color: rgb(255, 164, 28);
+}
+
+.item-name {
+  font-size: var(--item-name-fontSize);
+  color: var(--item-name-fontColor);
+  font-weight: bold;
+}
+
+.item-price-stock {
+  font-size: var(--item-price-stock-fontSize);
+  color: var(--item-price-stock-fontColor);
+  font-weight: bold;
+}
+
+.item-shipping-bonus {
+  font-size: var(--item-shipping-fontSize);
+  color: var(--item-shipping-fontColor);
+}
+
+.cart-buy-buttons button {
+  font-size: 16px;
+  padding: 9px 30px;
+  box-sizing: border-box;
+  min-width: 145px;
+  border-radius: 30px;
+  border-style: none;
+  cursor: pointer;
+}
+.cart-buy-buttons .addTocart-button {
+  background-color: var(--button-addToCart-color);
+}
+.cart-buy-buttons .buynow-button {
+  background-color: var(--button-buy-color);
+}
+
+button .addTocart-button .buynow-button {
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */

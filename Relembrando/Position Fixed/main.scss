@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+:root {
+    --nav-height: 80px;
+}
+
+body {
+    height: 3000px;
+    margin: 0;
+}
+
+#nav {
+    background-color: aquamarine;
+    height: var(--nav-height);
+    width: 100vw;
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    display: flex;
+    margin-top: 0px;
+}
+
+.main {
+    background-color: blueviolet;
+    margin-top: calc(var(--nav-height) + 20px);
+    height: 100%;
+    
+}
