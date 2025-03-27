@@ -5,8 +5,13 @@
   --sub-font-color: #9d9d9d;
   --input-box-color: #121212;
   --input-button-color: #222222;
-  --inpit-font-color: #929292;
+  --input-font-color: #929292;
   --header-height: 100px;
   --sidebar-width: 300px;
   --filter-height: 50px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }/*# sourceMappingURL=sidebar.css.map */

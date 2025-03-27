@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <title>Youtube</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="icons/hamburger.svg" alt="">
-                <img src="icons/youtube-logo.svg" alt="">
+    <header class="header-top">
+        <nav class="nav-search">
+            <div class="nav-top-left-corner-elements">
+                <img class="top-left-hamburger-icon" src="icons/hamburger.svg" alt="">
+                <img class="top-left-youtube-logo" src="icons/youtube-logo-white.svg" alt="">
             </div>
-            <div>
-                <div>
-                    <img src="icons/search.svg" alt="">
+            <div class="nav-top-middle-elements">
+                <div class="search-input">
+                    <img class="top-middle-search-icon" class="search-hover" src="icons/search.svg" alt="">
                     <input type="text" name="" id="" placeholder="Pesquisar">
+                    <img class="top-middle-search-icon" class="search-button" src="icons/search.svg" alt="">
                 </div>
-                <img src="icons/microphone.svg" alt="">
+                <img class="middle-microphone-svg" src="icons/microphone.svg" alt="">
             </div>
-            <div>
-                <div>
-                    <img src="icons/plus.svg" alt="">
-                    <p>Criar</p>
+            <div class="nav-top-right-corner-elements">
+                <div class="top-right-create-button">
+                    <img class="top-right-plus-icon" src="icons/plus.svg" alt="">
+                    <p class="top-right-create-text">Criar</p>
                 </div>
-                <img src="icons/notification.svg" alt="">
-                <div>
-                    <img src="icons/unnamed.jpg" alt="">
-                </div>
+                <img class="top-right-notification-icon" src="icons/notification.svg" alt="">
+
+                    <img class="profile-picture" src="icons/unnamed.jpg" alt="">
+
             </div>
         </nav>
     </header>
@@ -48,7 +55,7 @@
         <p class="video-genre">Mangá</p>
         <p class="video-genre">Banda sonora</p>
         <p class="video-genre">Jogo eletrônico independente</p>
-        <img src="icons/advance filter.svg" alt="">
+        <img class="nav-filter-advance-icon" src="icons/advance filter.svg" alt="">
     </nav>
     
 

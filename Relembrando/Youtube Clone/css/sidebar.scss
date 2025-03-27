@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 :root {
     --main-theme: #0f0f0f;
@@ -7,9 +8,14 @@
 
     --input-box-color: #121212;
     --input-button-color: #222222;
-    --inpit-font-color: #929292;
+    --input-font-color: #929292;
 
     --header-height: 100px;
     --sidebar-width: 300px;
     --filter-height: 50px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
 }

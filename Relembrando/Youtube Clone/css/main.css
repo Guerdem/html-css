@@ -5,8 +5,24 @@
   --sub-font-color: #9d9d9d;
   --input-box-color: #121212;
   --input-button-color: #222222;
-  --inpit-font-color: #929292;
+  --input-font-color: #929292;
   --header-height: 100px;
   --sidebar-width: 300px;
   --filter-height: 50px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--main-theme);
+  color: var(--main-font-color);
+}
+
+.top-left-hamburger-icon, .top-middle-search-icon,
+.middle-microphone-svg, .top-right-plus-icon, .top-right-notification-icon,
+.top-right-notification-icon, .nav-filter-advance-icon {
+  filter: brightness(0) saturate(100%) invert(93%) sepia(100%) saturate(0%) hue-rotate(341deg) brightness(108%) contrast(108%);
 }/*# sourceMappingURL=main.css.map */
