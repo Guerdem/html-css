@@ -9,10 +9,14 @@
     --input-box-color: #121212;
     --input-button-color: #222222;
     --input-font-color: #929292;
+    --input-border-color: hsl(0,0%,18.82%);
 
     --header-height: 100px;
     --sidebar-width: 300px;
     --filter-height: 50px;
+
+    // SVG size //
+    --top-header-icon-size: 24px;
 }
 
 * {
@@ -30,28 +34,85 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    padding: 13px 24px;
 }
 
 .nav-top-left-corner-elements {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 24px;
+
+    .top-left-hamburger-icon {
+        width: var(--top-header-icon-size);
+    }
 }
 
 .nav-top-middle-elements {
     display: flex;
     align-items: center;
+    gap: 5px;
 
     .search-input {
         display: flex;
         align-items: center;
+        width: 500px;
+
+        }
+        
+        .top-middle-input {
+            border-radius: 8vh;
+            border-color: var(--input-border-color);
+            border-style: solid;
+            border-width: 1px;
+            background-color: hsl(0,0%,7%);
+            color: var(--sub-font-color);
+            height: 40px;
+            width: 100%;
+            text-indent: 10px;
+            margin-left: 34px;
+            
+
+            input {
+                
+            }
+        }
+
+        input[type=text]:focus {
+            border-radius: 8vh;
+            border-color: #1c62b9;
+            border-style: solid;
+            border-width: 1px;
+            background-color: hsl(0,0%,7%);
+            outline: 0;
+            background-image: url('/Relembrando/Youtube Clone/icons/search.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-left: 34px;
+            margin-left: 0px;
+
+
+          }
+          
     }
-}
 
 .nav-top-right-corner-elements {
     display: flex;
     align-items: center;
+    gap: 20px;
+
+    img {
+        width: var(--top-header-icon-size);
+    }
+
+    .top-right-create-button {
+        font-size: 14px;
+        font-weight: 600;
+        gap: 5px;
+        background-color: var(--buttons-color);
+        border-radius: 8vh;
+        padding: 5px 14px;
+    }
 
     .top-right-create-button {
         display: flex;
@@ -59,7 +120,7 @@
     }
 
     .profile-picture {
-        width: 30px;
+        width: 32px;
         border-radius: 8vh;
     }
 }
