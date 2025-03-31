@@ -1,16 +1,3 @@
-:root {
-  --main-theme: #0f0f0f;
-  --main-font-color: rgb(241, 241, 241);
-  --buttons-color: #272727;
-  --sub-font-color: #9d9d9d;
-  --input-box-color: #121212;
-  --input-button-color: #222222;
-  --input-font-color: #929292;
-  --header-height: 100px;
-  --sidebar-width: 300px;
-  --filter-height: 50px;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -21,7 +8,7 @@ body {
   color: var(--main-font-color);
 }
 
-.top-left-hamburger-icon, .top-middle-search-icon,
+.top-left-hamburger-icon, .top-middle-search-icon, .top-middle-header-search-icon,
 .middle-microphone-svg, .top-right-plus-icon, .top-right-notification-icon,
 .top-right-notification-icon, .nav-filter-advance-icon {
   filter: brightness(0) saturate(100%) invert(93%) sepia(100%) saturate(0%) hue-rotate(341deg) brightness(108%) contrast(108%);

@@ -15,22 +15,33 @@
     <header class="header-top">
         <nav class="nav-search">
             <div class="nav-top-left-corner-elements">
-                <img class="top-left-hamburger-icon" src="icons/hamburger.svg" alt="">
+                <div class="top-left-hamburger-icon-wrapper">
+                    <img class="top-left-hamburger-icon" src="icons/hamburger.svg" alt="">
+                </div>
                 <img class="top-left-youtube-logo" src="icons/youtube-logo-white.svg" alt="">
             </div>
             <div class="nav-top-middle-elements">
-                <div class="search-input"> 
-                    <input class="top-middle-input" type="text" name="" id="text" placeholder="Pesquisar">
+                <form class="search-input">
+                    <input class="top-middle-input" type="text" value="" name="" placeholder="Pesquisar">
+                    <div class="search-icon-wrapper">
+                        <img class="top-middle-header-search-icon" src="icons/search.svg" alt="">
+                    </div>
+                </form>
+                <div class="search-input-button">
                     <img class="top-middle-search-icon" class="search-button" src="icons/search.svg" alt="">
                 </div>
-                <img class="middle-microphone-svg" src="icons/microphone.svg" alt="">
+                <div class="middle-microphone-svg-wrapper">
+                    <img class="middle-microphone-svg" src="icons/microphone.svg" alt="">
+                </div>
             </div>
             <div class="nav-top-right-corner-elements">
                 <div class="top-right-create-button">
                     <img class="top-right-plus-icon" src="icons/plus.svg" alt="">
                     <p class="top-right-create-text">Criar</p>
                 </div>
-                <img class="top-right-notification-icon" src="icons/notification.svg" alt="">
+                <div class="top-right-notification-icon-wrapper">
+                    <img class="top-right-notification-icon" src="icons/notification.svg" alt="">
+                </div>
                 <img class="profile-picture" src="icons/unnamed.jpg" alt="">
             </div>
         </nav>

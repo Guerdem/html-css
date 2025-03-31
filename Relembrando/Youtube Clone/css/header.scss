@@ -4,7 +4,7 @@
     --main-theme: #0f0f0f;
     --main-font-color: rgb(241, 241, 241);
     --buttons-color: #272727;
-    --sub-font-color: #9d9d9d;
+    --sub-font-color: #d6d6d6;
 
     --input-box-color: #121212;
     --input-button-color: #222222;
@@ -25,8 +25,13 @@
     font-family: "Roboto", "arial";
 }
 
-.header-top {
-     
+.middle-microphone-svg-wrapper:hover, .top-right-create-button:hover, 
+.top-left-hamburger-icon-wrapper:hover, .top-right-notification-icon-wrapper:hover {
+    background-image: linear-gradient(rgb(54, 54, 54) 0 0);
+}
+
+.middle-microphone-svg-wrapper:hover {
+    background-color: #1c62b9;
 }
 
 .nav-search {
@@ -34,7 +39,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 13px 24px;
+    padding: 13px 20px;
 }
 
 .nav-top-left-corner-elements {
@@ -43,6 +48,17 @@
     align-items: center;
     gap: 24px;
 
+
+    .top-left-hamburger-icon-wrapper {
+        width: 40px;
+        height: 40px;
+        border-radius: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+  
     .top-left-hamburger-icon {
         width: var(--top-header-icon-size);
     }
@@ -51,12 +67,47 @@
 .nav-top-middle-elements {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
+    width: 100%;
+    margin-right: 12px;
+    
 
     .search-input {
+        position: relative;
         display: flex;
         align-items: center;
-        width: 500px;
+        flex-direction: row-reverse;
+        width: 100%;
+        max-width: 400px;
+        margin-left: 60px;
+        
+
+        .search-icon-wrapper {
+            position: absolute;
+            left: -35px;
+            display: none;
+            padding: 0px;
+            align-items: center;
+            width: 80px;
+            height: 40px;
+            z-index: -1;
+            
+            img {
+                width: 20px;
+                margin-left: 15px;
+            }
+
+        }
+
+        .top-middle-input:focus ~ div {
+            display: flex;
+            border-radius: 8vh;
+            border-color: #1c62b9;
+            border-style: solid;
+            border-width: 1px;
+            background-color: hsl(0,0%,7%);
+        }
 
         }
         
@@ -64,42 +115,69 @@
             border-radius: 8vh;
             border-color: var(--input-border-color);
             border-style: solid;
+            border-bottom-right-radius: 0vh;
+            border-top-right-radius: 0vh;
             border-width: 1px;
             background-color: hsl(0,0%,7%);
             color: var(--sub-font-color);
+            font-size: 16px;
             height: 40px;
             width: 100%;
-            text-indent: 10px;
-            margin-left: 34px;
-            
+            text-indent: 15px;
 
-            input {
-                
-            }
         }
 
+
         input[type=text]:focus {
-            border-radius: 8vh;
+            border-radius: 0vh;
             border-color: #1c62b9;
             border-style: solid;
             border-width: 1px;
+            margin-left: 1px;
+            border-left-width: 0px;
             background-color: hsl(0,0%,7%);
             outline: 0;
-            background-image: url('/Relembrando/Youtube Clone/icons/search.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            padding-left: 34px;
-            margin-left: 0px;
-
-
+            
           }
+
+        .search-input-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8vh;
+            border-color: var(--input-border-color);
+            border-style: solid;
+            border-bottom-left-radius: 0vh;
+            border-top-left-radius: 0vh;
+            border-width: 1px;
+            margin-left: -6px;
+            background-color: var(--input-button-color);
+            height: 40px;
+            min-width: 60px;
+            cursor: pointer;
+        }
+
+        .middle-microphone-svg-wrapper {
+            background-color: var(--input-button-color);
+            border-radius: 8vh;
+            width: 56px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 10px;
+            cursor: pointer;
+
+        }
+
+        
           
     }
 
 .nav-top-right-corner-elements {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
     img {
         width: var(--top-header-icon-size);
@@ -119,8 +197,19 @@
         align-items: center;
     }
 
+    .top-right-notification-icon-wrapper {
+        width: 40px;
+        height: 40px;
+        border-radius: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
     .profile-picture {
         width: 32px;
         border-radius: 8vh;
     }
 }
+
