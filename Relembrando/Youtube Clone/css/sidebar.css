@@ -1,4 +1,44 @@
+:root {
+  --main-theme: #0f0f0f;
+  --main-font-color: rgb(241, 241, 241);
+  --buttons-color: #272727;
+  --sub-font-color: #d6d6d6;
+  --sidebar-width: 94px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
+}
+
+main, .video-filter {
+  margin-left: var(--sidebar-width);
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-theme);
+  max-width: var(--sidebar-width);
+  height: 100vh;
+  padding-top: 6px;
+  gap: 3px;
+}
+.sidebar .sidebar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1vh;
+  width: 62px;
+  height: 70px;
+  cursor: pointer;
+  margin-top: 1px;
+  margin-left: 5px;
+  gap: 7px;
+}
+.sidebar .sidebar-item p {
+  font-size: 10px;
 }/*# sourceMappingURL=sidebar.css.map */
