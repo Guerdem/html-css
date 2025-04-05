@@ -36,6 +36,13 @@
     background-color: #1c62b9;
 }
 
+.header-top {
+    position: sticky;
+    top: 0;
+    z-index: 300;
+    background-color: var(--main-theme);
+}
+
 .nav-search {
     display: flex;
     flex-direction: row;
@@ -221,11 +228,19 @@
     }
 }
 
+.video-filter-container {
+    position: sticky;
+    top: 56px;
+    background-color: var(--main-theme);
+    z-index: 300;
+    padding: 3px 0px;
+}
+
 .video-filter {
     display: flex;
     overflow: hidden;
     position: relative;
-    height: 40px;
+    height: 30px;
     margin: 10px 20px;
     gap: 10px;
     margin-top: 10px;
@@ -243,6 +258,7 @@
         font-weight: 500;
         white-space: nowrap;
         cursor: pointer;
+        
     }
 
 

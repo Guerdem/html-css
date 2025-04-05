@@ -16,6 +16,7 @@
 body {
     background-color: var(--main-theme);
     color: var(--main-font-color);
+    height: 3000px;
 
     
 }
@@ -23,8 +24,173 @@ body {
 .top-left-hamburger-icon, .top-middle-search-icon, .top-middle-header-search-icon, 
 .middle-microphone-svg, .top-right-plus-icon, .top-right-notification-icon,
 .top-right-notification-icon, .nav-filter-advance-icon, .sidebar-home-icon, .sidebar-shorts-icon, 
-.sidebar-subscriptions-icon, .sidebar-profile-icon.  {
+.sidebar-subscriptions-icon, .sidebar-profile-icon, .streaming-icon, .video-options {
     filter: brightness(0) saturate(100%) invert(93%) sepia(100%) saturate(0%) hue-rotate(341deg) brightness(108%) contrast(108%);
 }
 
+.videos-grid-container {
+    display: grid;
+    padding-right: 20px;
+    margin-top: 40px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
 
+    .video-container {
+        display: flex;
+        flex-direction: column;
+
+
+        .video-thumbnail-container {
+            position: relative;
+            width: 100%;
+
+            .video-thumbnail {
+                width: 100%;
+                border-radius: 12px;
+            }
+
+            
+            .video-time {
+                position: absolute;
+                right: 8px;
+                bottom: 10px;
+                border-radius: 4px;
+                background-color: rgba(0, 0, 0, 0.726);
+                padding: 2px 4px;
+                font-size: 13px;
+                
+            }
+        }
+
+        .video-info-container {
+            display: flex;
+            gap: 10px;
+            white-space: wrap;
+            
+
+            .channel-profile-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                max-width: 44px;
+                height: 44px;
+
+                .channel-profile {
+                    width: 100%;
+                    border-radius: 8vh;
+                    border-color: red;
+                    border-width: 1px;
+                    border-style: solid;
+                    padding: 3px;
+                    align-self: start;
+                }
+
+                .profile-streaming-status-wrapper {
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: RGBA(225, 0, 45, 0.9);
+                    border-radius: 2px;
+                    padding: 0px 2px;
+                    
+                    .streaming-icon {
+                        width: 14px;
+                    }
+                }
+            }
+
+            .video-info {
+                display: flex;
+                flex-direction: column;
+                margin-top: 6px;
+                gap: 5px;
+
+                .title-options-alignment {
+                    display: flex;
+
+
+                    .video-options-wrapper{
+                        position: relative;
+                        display: flex;
+                        align-self: start;
+                        align-items: center;
+                        border-radius: 8vh;
+                        cursor: pointer;
+                        
+                        
+                        
+                    }
+                    .video-options {
+                        width: 24px;
+                    }
+
+                    .video-options-wrapper::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        z-index: -1;
+                        transition: background-color 400ms, border-color 600ms;
+                        transition-delay: border;
+                        transition-timing-function: ease-in-out;
+                    }
+
+                    .video-options-wrapper:active::after {
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: grey;
+                        background-color: rgba(255, 255, 255, 0.158);
+                        border-radius: 8vh;
+                        width: 35px;
+                        height: 35px;
+                    }
+
+
+                    
+                    
+                }
+
+                .video-title {
+                    margin-bottom: 4px;
+                    font-size: 16px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                        overflow: hidden;
+
+
+                    @supports (-webkit-line-clamp: 2) {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: initial;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    }
+                }
+
+                .channel-name, .video-views {
+                    font-size: 14px;
+                    color: RGB(170, 170, 170);
+                }
+
+                .live-container {
+                    display: inline-flex;
+                    align-items: center;
+                    align-self: flex-start;
+                    gap: 3px;
+                    background-color: RGBA(225, 0, 45, 0.9);
+                    border-radius: 3px;
+                    padding: 1px 3px;
+                    
+                    .live-status-text {
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
